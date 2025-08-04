@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 // import neeraj from "../assets/teamPhoto/neeraj.png";
 import { FaInstagram } from "react-icons/fa6";
 import founder from "../assets/teamPhotos/Founder.jpg";

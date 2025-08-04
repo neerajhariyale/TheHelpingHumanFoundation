@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import workimage1 from "../assets/workPhotos/workimage1.jpg";
 import workimage2 from "../assets/workPhotos/workimage2.jpg";
 import workimage3 from "../assets/workPhotos/workimage3.jpg";

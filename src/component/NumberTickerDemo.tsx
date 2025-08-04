@@ -1,13 +1,19 @@
 import { NumberTicker } from "@/components/magicui/number-ticker";
 
-export function NumberTickerDemo({ number, suffix = "" }) {
-  const formattedNumber = parseFloat(number).toFixed(2); // Ensures float or double with 2 decimals
+
+type Props = {
+  number: number;
+  suffix?: string;
+};
+
+export function NumberTickerDemo({ number, suffix = "" }:Props) {
+  //const formattedNumber = number.toFixed(2); // Ensures float or double with 2 decimals
 
   return (
     <div className="flex items-end justify-center gap-2">
       {/* Animated Number */}
       <NumberTicker
-        value={formattedNumber}
+        value={parseFloat(number.toFixed(2))}
         className="whitespace-pre-wrap text-6xl font-medium tracking-tighter text-black dark:text-white text-center"
       />
 

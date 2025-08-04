@@ -3,7 +3,7 @@ import workimage1 from "@/assets/workPhotos/workimage1.jpg";
 import BlurText from "@/components/magicui/BlurText";
 import { AnimatedGradientTextDemo } from "@/component/AnimatedGradientTextDemo";
 import { NumberTickerDemo } from "./NumberTickerDemo";
-import { TextAnimateDemo } from "./TextAnimateDemo";
+
 
 // import RollingGallery from "./RollingGallery"
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import workimage2 from "@/assets/workPhotos/workimage2.jpg";
 
 // 1️⃣ Donation Data with Category
@@ -58,9 +58,14 @@ const donationData = [
     category: "📖 Education",
   },
 ];
+type Props = {
+  leftText: string;
+  rightText: string;
+  image: string;
+};
 
 // 2️⃣ Reusable Card Component
-const DonationCard = ({ leftText, rightText, image }) => {
+const DonationCard = ({ leftText, rightText, image }: Props) => {
   return (
     <div className="max-w-sm bg-white shadow-lg rounded-2xl overflow-hidden border border-gray-200">
       <img src={image} alt="Donation" className="w-64 h-52 object-cover" />

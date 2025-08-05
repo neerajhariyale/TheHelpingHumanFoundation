@@ -80,14 +80,7 @@ import Team from "./pages/Team";
 import Gallery from "./pages/Gallery";
 
 function App() {
-  // const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      // setLoading(false);
-    }, 1500); // 1.5 seconds
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <div className= "w-full flex flex-col justify-center items-center " >

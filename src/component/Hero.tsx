@@ -1,5 +1,5 @@
 // import React from 'react'
-import workimage1 from "@/assets/workPhotos/workimage1.jpg";
+import workimage8 from "@/assets/workPhotos/workimage8.jpg";
 import BlurText from "@/components/magicui/BlurText";
 import { AnimatedGradientTextDemo } from "@/component/AnimatedGradientTextDemo";
 import { NumberTickerDemo } from "./NumberTickerDemo";
@@ -17,7 +17,7 @@ const Hero = () => {
       {/* Left Image */}
       <div className="w-full lg:w-1/2  flex justify-center items-center">
         <img
-          src={workimage1}
+          src={workimage8}
           alt="Helping Human Work"
           className="w-full h-auto rounded-lg object-cover"
         />

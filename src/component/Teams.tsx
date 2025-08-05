@@ -56,7 +56,7 @@ const Teams = () => {
     <div>
       {/* Founder Cards */}
       <div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 justify-center items-center mt-5 w-full max-w-screen-md mx-auto ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  justify-center items-center mt-5 w-full max-w-screen-md mx-auto ">
           {founderData.map((item, index) => (
             <div
               key={index}
@@ -88,7 +88,7 @@ const Teams = () => {
 
       {/* Member Cards */}
       <div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-center items-center mt-5 w-full max-w-screen-lg mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 justify-center items-center mt-5 w-full max-w-screen-lg mx-auto">
           {memberData.map((item, index) => (
             <div
               key={index}

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import workimage1 from "../assets/workPhotos/workimage1.jpg";
 import workimage2 from "../assets/workPhotos/workimage2.jpg";
 import workimage3 from "../assets/workPhotos/workimage3.jpg";
@@ -38,14 +38,13 @@ const images = [
 ];
 
 const Gallery = () => {
-  const [showAll, setShowAll] = useState(false);
-  const isMobile = window.innerWidth < 640;
-  const visibleImages = isMobile && !showAll ? images.slice(0, 5) : images;
+  const navigate = useNavigate();
+  const previewImages = images.slice(0, 4); // Show only 4 images always
 
   return (
     <div className="w-11/12 mx-auto p-4">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {visibleImages.map((img, index) => (
+      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-4">
+        {previewImages.map((img, index) => (
           <div
             key={index}
             className="w-full h-96 overflow-hidden rounded-lg shadow-md flex items-center justify-center"
@@ -59,17 +58,15 @@ const Gallery = () => {
         ))}
       </div>
 
-      {/* View More Button (visible only on mobile and when not showing all) */}
-      {isMobile && !showAll && (
-        <div className="flex justify-center mt-4">
-          <button
-            onClick={() => setShowAll(true)}
-            className="px-6 py-2 bg-black text-white rounded hover:bg-gray-800 transition"
-          >
-            View More
-          </button>
-        </div>
-      )}
+      {/* View More Button for all devices */}
+      <div className="flex justify-center mt-4">
+        <button
+          onClick={() => navigate("/gallery")}
+          className="px-6 py-2 bg-black text-white rounded hover:bg-gray-800 transition"
+        >
+          View More 😄
+        </button>
+      </div>
     </div>
   );
 };

@@ -71,7 +71,7 @@
 
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useState, useEffect } from "react";
+import {  useEffect } from "react";
 import Navbar from "./component/Navbar";
 import Donate from "./pages/Donate";
 import Home from "./pages/Home";
@@ -80,11 +80,11 @@ import Team from "./pages/Team";
 import Gallery from "./pages/Gallery";
 
 function App() {
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLoading(false);
+      // setLoading(false);
     }, 1500); // 1.5 seconds
     return () => clearTimeout(timer);
   }, []);

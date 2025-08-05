@@ -1,5 +1,5 @@
 import Donation from '@/component/Donation'
-import React from 'react'
+// import React from 'react'
 
 const Donate = () => {
   return (

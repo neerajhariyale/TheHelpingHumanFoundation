@@ -21,7 +21,7 @@ import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react"; // Icon package like lucide-react or heroicons
 import logo1 from '@/assets/workPhotos/logo1.png'
-import { ShimmerButtonDemo } from './ShimmerButtonDemo'
+// import { ShimmerButtonDemo } from './ShimmerButtonDemo'
 
 const Navbar = () => {
   const navigate = useNavigate();

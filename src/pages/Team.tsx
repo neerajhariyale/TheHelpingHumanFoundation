@@ -1,5 +1,5 @@
 import Teams from '@/component/Teams'
-import React from 'react'
+// import React from 'react'
 
 const Team = () => {
   return (

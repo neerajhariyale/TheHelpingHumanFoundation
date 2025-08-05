@@ -6,7 +6,7 @@ import Gallery from "@/component/Gallery";
 import WelfareServices from "@/component/WelfareServices";
 import Footer from "@/component/Footer";
 import { BlurFade } from "@/components/magicui/blur-fade";
-import DonateAmount from "@/component/DonateAmount";
+// import DonateAmount from "@/component/DonateAmount";
 
 const Home = () => {
   return (
@@ -62,7 +62,7 @@ const Home = () => {
          <Footer />
        </BlurFade>
 
-       <DonateAmount/>
+       {/* <DonateAmount/> */}
      </div>
   )
 }

@@ -71,7 +71,6 @@
 
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import {  useEffect } from "react";
 import Navbar from "./component/Navbar";
 import Donate from "./pages/Donate";
 import Home from "./pages/Home";

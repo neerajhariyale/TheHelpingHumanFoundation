@@ -38,9 +38,9 @@ const images = [
 ];
 
 const Gallery = () => {
-  const [showAll, setShowAll] = useState(false);
-  const isMobile = window.innerWidth < 640;
-  const visibleImages = isMobile && !showAll ? images.slice(0, 5) : images;
+//   const [showAll, setShowAll] = useState(false);
+//   const isMobile = window.innerWidth < 640;
+//   const visibleImages = isMobile && !showAll ? images.slice(0, 5) : images;
 
   return (
     <>
@@ -60,7 +60,7 @@ const Gallery = () => {
 
       <div className="w-11/12 mx-auto p-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {visibleImages.map((img, index) => (
+          {images.map((img, index) => (
             <div
               key={index}
               className="w-full h-96 overflow-hidden rounded-lg shadow-md flex items-center justify-center"

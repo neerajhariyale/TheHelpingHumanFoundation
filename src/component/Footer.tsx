@@ -2,7 +2,6 @@
 import { FaInstagram } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
-import { FaYoutube } from "react-icons/fa6";
 import { BiLogoGmail } from "react-icons/bi";
 
 const Footer = () => {

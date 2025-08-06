@@ -79,7 +79,6 @@ import ContactUs from "./pages/ContactUs";
 import Team from "./pages/Team";
 import Gallery from "./pages/Gallery";
 import DonateForm from "./component/DonateForm";
-import Certificate from "./pages/Certificate";
 import Chairman from "./pages/Chairman";
 
 function App() {

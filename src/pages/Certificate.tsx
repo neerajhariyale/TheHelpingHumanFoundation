@@ -1,4 +1,3 @@
-import React from 'react'
 import certificate from "@/assets/teamPhotos/certificate.png"
 
 const Certificate = () => {

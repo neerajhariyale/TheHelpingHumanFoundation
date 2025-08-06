@@ -1,9 +1,9 @@
 // import React from 'react'
-import workimage8 from "@/assets/workPhotos/workimage8.jpg";
+
 import BlurText from "@/components/magicui/BlurText";
 import { AnimatedGradientTextDemo } from "@/component/AnimatedGradientTextDemo";
 import { NumberTickerDemo } from "./NumberTickerDemo";
-import { Navigate, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 
 
 // import RollingGallery from "./RollingGallery"

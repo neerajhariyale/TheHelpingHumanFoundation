@@ -1,7 +1,5 @@
-import React from "react";
+
 import chairman from "@/assets/teamPhotos/Founder.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import map from "@/assets/workPhotos/maplogo.png";
 import whatsapp from "@/assets/workPhotos/whatsapp.png";
 import gmail from "@/assets/workPhotos/gmail.png"

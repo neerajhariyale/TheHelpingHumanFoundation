@@ -1,10 +1,9 @@
 "use client";
 
 import * as React from "react";
-import toast, { ToastBar, Toaster } from 'react-hot-toast';
+import toast, { Toaster } from "react-hot-toast";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { ConfettiButton } from "@/components/magicui/confetti";
 import {
   DropdownMenu,
   DropdownMenuItem,
@@ -37,8 +36,8 @@ const amountMap: Record<string, number> = {
   "Virtual Cake Cutting": 400,
   "Birthday Cake": 1600,
   "Plant a tree": 70,
-  "Books": 100,
-  "Stationary Kit": 200
+  Books: 100,
+  "Stationary Kit": 200,
 };
 
 interface DonateFormProps {
@@ -66,8 +65,7 @@ const DonateForm: React.FC<DonateFormProps> = ({
   const [place, setPlace] = useState(initialData?.place || "");
   const [utr, setUtr] = useState(initialData?.utr || "");
   const [isCustomAmount, setIsCustomAmount] = useState(false);
-  const [showConfetti, setShowConfetti] = useState(false);
-
+  // const [showConfetti, setShowConfetti] = useState(false);
 
   const [category, setCategory] = useState(
     isEditing ? "Donor Iksha" : initialData?.category || ""
@@ -79,7 +77,6 @@ const DonateForm: React.FC<DonateFormProps> = ({
   const [amount, setAmount] = useState<number>(initialData?.amount ?? 0);
   const [quantity, setQuantity] = useState<number>(initialData?.quantity ?? 1);
   const [date, setDate] = useState(initialData?.date || "");
-  const [qrImage, setQrImage] = useState<string | null>(null);
   const [accountDetails] = useState({
     bankName: "Canara Bank",
     accountHolderName: "RAVI PRAKASH",
@@ -151,7 +148,6 @@ const DonateForm: React.FC<DonateFormProps> = ({
   //   console.log("Form Submitted:", data);
   //   toast.success("Form submitted successfully!");
 
-
   //   if (!isEditing) {
   //   setName("");
   //   setMobile("");
@@ -167,7 +163,6 @@ const DonateForm: React.FC<DonateFormProps> = ({
   //   setDate();
   // }
   // };
-
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -200,12 +195,7 @@ const DonateForm: React.FC<DonateFormProps> = ({
       date,
     };
     toast.success("Redirecting to WhatsApp...");
-    setShowConfetti(true);
 
-
-    setTimeout(() => {
-    setShowConfetti(false);
-  }, 3000); 
     // Compose WhatsApp message
     const message = `
 📋 *New Donation Submission*:
@@ -228,7 +218,7 @@ ${data.subCategory ? `📌 *Sub-category:* ${data.subCategory}\n` : ""}
     )}`;
 
     toast.success("Redirecting to WhatsApp...");
-    console.log(data)
+    console.log(data);
 
     // Open WhatsApp chat
     window.open(whatsappURL, "_blank");
@@ -394,10 +384,11 @@ ${data.subCategory ? `📌 *Sub-category:* ${data.subCategory}\n` : ""}
                       setAmount(amt);
                       setIsCustomAmount(true);
                     }}
-                    className={`px-4 py-2 rounded border font-medium ${amount === amt
+                    className={`px-4 py-2 rounded border font-medium ${
+                      amount === amt
                         ? "bg-black text-white"
                         : "bg-white text-black border-1 border-black hover:cursor-pointer"
-                      }`}
+                    }`}
                   >
                     ₹{amt}
                   </button>
@@ -405,7 +396,6 @@ ${data.subCategory ? `📌 *Sub-category:* ${data.subCategory}\n` : ""}
               </div>
             </div>
           )}
-
 
           {!isEditing &&
             category &&
@@ -574,16 +564,12 @@ ${data.subCategory ? `📌 *Sub-category:* ${data.subCategory}\n` : ""}
         <div>
           <Calendar22 />
         </div>
-
-
         <Button
           type="submit"
           className="w-full mt-2 bg-black text-white py-2 rounded hover:bg-white hover:text-black hover:cursor-pointer hover:border-black hover:border"
         >
           {isEditing ? "Save Changes" : "Submit"}
         </Button>
-
-
       </form>
     </div>
   );

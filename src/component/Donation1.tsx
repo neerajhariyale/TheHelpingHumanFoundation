@@ -7,7 +7,7 @@ import virtualcakecutting from "@/assets/workPhotos/virtualcakecutting.jpg";
 import feeddog from "@/assets/workPhotos/straydogfeed.jpg";
 import birthdaycake from "@/assets/workPhotos/birthdaycakecutting.jpg";
 import planttree from "@/assets/workPhotos/planttree.jpg";
-import educationkit from "@/assets/workPhotos/educationkit.jpg";
+
 
 const donationData = [
   {

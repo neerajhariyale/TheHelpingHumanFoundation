@@ -70,6 +70,7 @@
 
 
 import "./App.css";
+import { ScrollProgress } from "@/components/magicui/scroll-progress";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./component/Navbar";
 import Donate from "./pages/Donate";
@@ -77,6 +78,9 @@ import Home from "./pages/Home";
 import ContactUs from "./pages/ContactUs";
 import Team from "./pages/Team";
 import Gallery from "./pages/Gallery";
+import DonateForm from "./component/DonateForm";
+import Certificate from "./pages/Certificate";
+import Chairman from "./pages/Chairman";
 
 function App() {
 
@@ -84,6 +88,7 @@ function App() {
   return (
     <div className= "w-full flex flex-col justify-center items-center " >
       <Router>
+        <ScrollProgress/>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -91,6 +96,8 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/joinus" element={<ContactUs />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/donation-form" element={<DonateForm/>} />
+          <Route path="/chairman" element={<Chairman/>}/>
         </Routes>
       </Router>
     </div>

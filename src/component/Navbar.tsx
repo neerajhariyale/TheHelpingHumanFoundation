@@ -19,6 +19,8 @@ import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react"; // Icon package like lucide-react or heroicons
 import logo1 from "@/assets/workPhotos/logo1.png";
+import certificate from "@/assets/teamPhotos/Ngo-Certificate.pdf"; 
+// import certificate from "@/assets/teamPhotos/Ngo-Certificate.pdf";
 // import { ShimmerButtonDemo } from './ShimmerButtonDemo'
 
 const Navbar = () => {
@@ -26,7 +28,7 @@ const Navbar = () => {
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [showAnimation, setShowAnimation] = useState(false);
-
+   
   const isActive = (path: string) => location.pathname === path;
 
   useEffect(() => {
@@ -45,6 +47,10 @@ const Navbar = () => {
     { name: "Team", path: "/team" },
     // { name: "Drives", path: "/drive" },
     { name: "Join Us", path: "/joinus" },
+    { name: "Chairman", path: "/chairman" },
+    // { name: "Certificate",path: "/certificate", },
+    { name: "Certificate", path: certificate, isPdf: true },
+    
   ];
 
   return (
@@ -73,7 +79,13 @@ const Navbar = () => {
                     ? "border-b-2 border-pink-700 font-semibold text-pink-600"
                     : "hover:border-b-2 hover:border-pink-700"
                 }`}
-                onClick={() => navigate(item.path)}
+                onClick={() => {
+  if (item.isPdf) {
+    window.open(item.path, "_blank");
+  } else {
+    navigate(item.path);
+  }
+}}
               >
                 {item.name}
               </p>
@@ -132,10 +144,14 @@ const Navbar = () => {
                   ? "text-red-600 font-semibold underline"
                   : "hover:text-red-500"
               }`}
-              onClick={() => {
-                navigate(item.path);
-                setIsMobileMenuOpen(false);
-              }}
+             onClick={() => {
+  if (item.isPdf) {
+    window.open(item.path, "_blank");
+  } else {
+    navigate(item.path);
+    setIsMobileMenuOpen(false);
+  }
+}}
             >
               {item.name}
             </p>

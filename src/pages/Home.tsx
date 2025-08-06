@@ -1,16 +1,19 @@
 // import Navbar from "./component/Navbar";
 import Hero from "@/component/Hero";
 import Teams from "@/component/Teams";
-import Donation from "@/component/Donation";
+import Donation1 from "@/component/Donation1";
 import Gallery from "@/component/Gallery";
 import WelfareServices from "@/component/WelfareServices";
 import Footer from "@/component/Footer";
 import { BlurFade } from "@/components/magicui/blur-fade";
-// import DonateAmount from "@/component/DonateAmount";
+import Copyright from "@/component/Copyright";
+import CarouselPlugin from "@/component/Coursel";
 
 const Home = () => {
   return (
      <div className="w-11/12 flex flex-col justify-center items-center ">
+
+        <CarouselPlugin/>
        <BlurFade delay={0.25} inView>
          
          <Hero />
@@ -35,10 +38,10 @@ const Home = () => {
              <div className="w-16 border-2 border-red-500 mt-2"></div>
            </div>
          </div>
-         <Donation />
+         <Donation1 />
        </BlurFade>
 
-       <BlurFade delay={0.25 * 2} inView>
+       {/* <BlurFade delay={0.25 * 2} inView>
          <div className="mt-5 w-11/12 h-contain mx-auto flex flex-col items-center justify-evenly mb-4">
            <div className="flex flex-col items-center">
              <p className="text-center mt-8  text-3xl">Happy Faces 😄</p>
@@ -46,7 +49,7 @@ const Home = () => {
            </div>
          </div>
          <Gallery />
-       </BlurFade>
+       </BlurFade> */}
 
        <BlurFade delay={0.25 * 2} inView>
          <div className="mt-5 w-11/12 h-contain mx-auto flex flex-col items-center justify-evenly">
@@ -62,7 +65,16 @@ const Home = () => {
          <Footer />
        </BlurFade>
 
+       <BlurFade delay={0.25 * 2} inView>
+         <div className="w-full">
+            <Copyright />
+         </div>
+       </BlurFade>
+
+
        {/* <DonateAmount/> */}
+
+       {/* <Footer/> */}
      </div>
   )
 }

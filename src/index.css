@@ -159,3 +159,13 @@
   }
 }
 
+
+
+/* Smooth, rounded scrollbar */
+::-webkit-scrollbar {
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #c4c4c4;
+  border-radius: 3px;
+}

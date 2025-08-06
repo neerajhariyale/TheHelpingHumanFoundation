@@ -3,6 +3,7 @@ import workimage8 from "@/assets/workPhotos/workimage8.jpg";
 import BlurText from "@/components/magicui/BlurText";
 import { AnimatedGradientTextDemo } from "@/component/AnimatedGradientTextDemo";
 import { NumberTickerDemo } from "./NumberTickerDemo";
+import { Navigate, useNavigate } from "react-router-dom";
 
 
 // import RollingGallery from "./RollingGallery"
@@ -12,19 +13,22 @@ const Hero = () => {
     console.log("Animation completed!");
   };
 
+ const navigate = useNavigate();
   return (
-    <div className="w-full min-h-screen flex flex-col lg:flex-row  py-6">
+
+   
+    <div className="w-full p-2 flex mx-auto  lg:flex-row ">
       {/* Left Image */}
-      <div className="w-full lg:w-1/2  flex justify-center items-center">
+      {/* <div className="w-full lg:w-1/2  flex justify-center items-center">
         <img
           src={workimage8}
           alt="Helping Human Work"
           className="w-full h-auto rounded-lg object-cover"
         />
-      </div>
+      </div> */}
 
       {/* Right Content */}
-      <div className="w-full lg:w-1/2 flex flex-col items-center text-center space-y-4 mt-4 sm:mt-4 md:mt-24 lg:mt-24">
+      <div className="w-full flex flex-col items-center text-center  mt-8 ">
         <BlurText
           text="The Helping Human Foundation"
           delay={150}
@@ -34,7 +38,7 @@ const Hero = () => {
           className="text-xl sm:text-3xl md:text-4xl font-semibold"
         />
 
-        <p className="text-sm sm:text-base md:text-lg px-2 md:px-6">
+        <p className="text-sm sm:text-base md:text-lg px-2 md:px-6 mt-4 text-gray-500">
           The Helping Human Foundation is a non-profit NGO dedicated to serving
           underprivileged communities through initiatives in education,
           healthcare, women empowerment, and social welfare, aiming to create
@@ -42,12 +46,12 @@ const Hero = () => {
         </p>
         {/* <TextAnimateDemo/> */}
 
-        <div className="w-fit mt-2">
-          <AnimatedGradientTextDemo />
+        <div className="w-fit mt-4 hover:cursor-pointer " onClick={() => navigate('/donate')}>
+          <AnimatedGradientTextDemo/>
         </div>
 
         {/* Number Stats */}
-        <div className="w-full flex flex-col sm:flex-row justify-around items-center gap-6 mt-6 ">
+        <div className="w-8/12 flex flex-col sm:flex-row justify-around items-center gap-6 mt-6 ">
           {/* Card 1 */}
           <div className="flex flex-col justify-center items-center">
             <BlurText
@@ -59,7 +63,8 @@ const Hero = () => {
               className="text-lg font-semibold"
             />
             <NumberTickerDemo number={9} suffix="Lakh+" />
-          </div>
+          </div> 
+         
 
           {/* Card 2 */}
           <div className="flex flex-col justify-center items-center">
@@ -72,7 +77,7 @@ const Hero = () => {
               className="text-lg font-semibold"
             />
             <NumberTickerDemo number={8.45} suffix="Lakh+" />
-          </div>
+          </div> 
 
           {/* Card 3 */}
           <div className="flex flex-col justify-center items-center">

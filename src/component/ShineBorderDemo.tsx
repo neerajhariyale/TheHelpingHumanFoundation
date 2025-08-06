@@ -27,7 +27,8 @@ export function ShineBorderDemo() {
   const handleJoinUs = () => {
     const { name, mobile, city, message } = formData;
 
-    const text = `Hi, I would like to join The Helping Human Foundation.
+    const text = `*Hi, I would like to join The Helping Human Foundation.*
+    
 👦🏻 Name: ${name}
 📱 Mobile: ${mobile}
 📍 City: ${city}

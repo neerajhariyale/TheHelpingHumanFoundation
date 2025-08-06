@@ -1,41 +1,71 @@
-// import React from 'react';
-import { FaInstagram, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
+// import React from "react";
+import { FaInstagram } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa6";
+import { FaPhone } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa6";
+import { BiLogoGmail } from "react-icons/bi";
 
 const Footer = () => {
+  //  social media links and phone number
+  const phoneNumber = "+919079554009";
+  const instagramLink = "https://www.instagram.com/ekhidaata_foundation/?hl=en";
+  const youtubeLink = "https://www.youtube.com/@ekhidaata_foundation";
+  const whatsappLink = "https://whatsapp.com/channel/0029VbB4AuMFy726CvgA8R2T"
+  // const gmailLink = "thehelpinghumanfoundation@yahoo.com";
+
   return (
-    <footer className="w-full mt-10">
-      <div className="mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
-        
-        {/* Left Section */}
-        <div className="text-center md:text-left">
-          <p className="font-semibold">📍 Bhopal, Madhya Pradesh</p>
-          <p className="mt-1">📞 +91 98765 43210</p>
+    <div className="mt-5  h-contain mx-auto flex flex-col items-center justify-evenly mb-8">
+      {/* Heading */}
+      <div className="flex flex-col items-center">
+        <p className="text-center mt-8  text-3xl">Follow Us for Updates</p>
+        <div className="w-16 border-2 border-red-500 mt-1"></div>
+      </div>
+
+      <div className="flex justify-center gap-5 items-center mt-4">
+        {/* Phone Icon */}
+        <div className="flex justify-center mt-3">
+          <a
+            href={`tel:${phoneNumber}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaPhone className="text-[39px] text-blue-400 hover:text-blue-800 transition duration-200" />
+          </a>
         </div>
 
-        {/* Center Section */}
-        <div className="text-center">
-          <img 
-            src="/logo.png" 
-            alt="NGO Logo" 
-            className="h-12 w-auto mx-auto mb-1"
-          />
-          <h2 className="text-lg font-bold">The Helping Human Foundation</h2>
+        {/* Instagram Icon */}
+        <div className="flex justify-center mt-3">
+          <a href={instagramLink} target="_blank" rel="noopener noreferrer">
+            <FaInstagram className="text-5xl text-red-500 hover:text-red-800 transition duration-200" />
+          </a>
         </div>
 
-        {/* Right Section */}
-        <div className="flex gap-4 text-2xl text-gray-700">
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-            <FaInstagram className="hover:text-pink-500 transition" />
+        {/* Youtube Icon */}
+        {/* <div className="flex justify-center mt-3">
+          <a href={youtubeLink} target="_blank" rel="noopener noreferrer">
+            <FaYoutube className="text-5xl text-red-500 hover:text-red-800 transition duration-200" />
           </a>
-          <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer">
-            <FaWhatsapp className="hover:text-green-500 transition" />
+        </div> */}
+
+        {/* Whatsapp Icon */}
+        <div className="flex justify-center mt-3">
+          <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+            <FaWhatsapp className="text-5xl text-green-500 hover:text-green-800 transition duration-200" />
           </a>
-          <a href="mailto:helpinghuman@email.com">
-            <FaEnvelope className="hover:text-blue-500 transition" />
+        </div>
+
+        {/* Gmail Icon */}
+        <div className="flex justify-center mt-3">
+          <a
+            href={"mailto:thehelpinghumanfoundation@yahoo.com"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <BiLogoGmail className="text-5xl text-red-500 hover:text-red-800 transition duration-200" />
           </a>
         </div>
       </div>
-    </footer>
+    </div>
   );
 };
 

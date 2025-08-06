@@ -18,8 +18,8 @@ export function AnimatedGradientTextDemo() {
           WebkitClipPath: "padding-box",
         }}
       />
-      🎉 <hr className="mx-2 h-4 w-px shrink-0 bg-neutral-500" />
-      <AnimatedGradientText className="text-sm font-medium">
+      🎉 <hr className="mx-2 h-6 w-px shrink-0 bg-neutral-500" />
+      <AnimatedGradientText className="text-lg font-medium">
         Donate
       </AnimatedGradientText>
       <ChevronRight

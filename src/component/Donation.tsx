@@ -1,5 +1,13 @@
 import  { useState } from "react";
 import workimage2 from "@/assets/workPhotos/workimage2.jpg";
+import vegbiryani from "@/assets/workPhotos/vegbiryani.jpg"
+import thaalimeal from "@/assets/workPhotos/thaalimeal.jpg"
+import virtualcakecutting from "@/assets/workPhotos/virtualcakecutting.jpg"
+import feeddog from "@/assets/workPhotos/straydogfeed.jpg"
+import birthdaycake from "@/assets/workPhotos/birthdaycakecutting.jpg"
+import planttree from "@/assets/workPhotos/planttree.jpg"
+import educationkit from "@/assets/workPhotos/educationkit.jpg"
+import { useNavigate } from "react-router-dom";
 
 // 1️⃣ Donation Data with Category
 const donationData = [
@@ -12,43 +20,43 @@ const donationData = [
   {
     leftText: "Veg Biriyani",
     rightText: "₹60/per person",
-    image: workimage2,
+    image: vegbiryani,
     category: "🍛 Food",
   },
   {
     leftText: "Thaali Meals",
     rightText: "₹60/per person",
-    image: workimage2,
+    image: thaalimeal,
     category: "🍛 Food",
   },
   {
     leftText: "Feed a Stray Dog",
     rightText: "₹35/per stray dog",
-    image: workimage2,
+    image: feeddog,
     category: "🐶 Animal",
   },
   {
     leftText: "Virtual Cake Cutting",
     rightText: "₹4000/celebration",
-    image: workimage2,
+    image: virtualcakecutting,
     category: "🎂 Birthday Celebration",
   },
   {
     leftText: "Birthday Cake",
     rightText: "₹1600 - 20 child",
-    image: workimage2,
+    image: birthdaycake,
     category: "🎂 Birthday Celebration",
   },
   {
     leftText: "Plant a tree",
     rightText: "₹70/per sapling ",
-    image: workimage2,
+    image: planttree,
     category: "🌳 Environment",
   },
     {
-    leftText: "Amay Patel",
-    rightText: "Raised: ₹3811 | Goal: ₹51600",
-    image: workimage2,
+    leftText: "Education Kit",
+    rightText: "₹200/per student",
+    image: educationkit,
     category: "📖 Education",
   },
    {
@@ -66,6 +74,8 @@ type Props = {
 
 // 2️⃣ Reusable Card Component
 const DonationCard = ({ leftText, rightText, image }: Props) => {
+
+  const navigate = useNavigate()
   return (
     <div className="max-w-sm bg-white shadow-lg rounded-2xl overflow-hidden border border-gray-200">
       <img src={image} alt="Donation" className="w-64 h-52 object-cover" />
@@ -74,7 +84,7 @@ const DonationCard = ({ leftText, rightText, image }: Props) => {
         <p className="text-sm font-medium text-gray-600">{rightText}</p>
       </div>
       <div className="px-4 pb-4">
-        <button className="w-full bg-black text-white py-2 rounded-xl text-center font-semibold transition-all duration-300 hover:bg-white hover:text-black hover:border hover:border-gray-600">
+        <button onClick={() => navigate('/donation-form')} className="w-full bg-black text-white py-2 rounded-xl text-center font-semibold transition-all duration-300 hover:bg-white hover:text-black hover:border hover:border-gray-600 hover:cursor-pointer">
           Donate
         </button>
       </div>
@@ -104,7 +114,7 @@ const Donation = () => {
             className={`px-4 py-2 rounded-full border font-medium transition ${
               filter === cat
                 ? "bg-black text-white border-black"
-                : "bg-white text-gray-700 border-gray-300 hover:bg-green-100"
+                : "bg-white text-black border-white hover:bg-black hover:text-white"
             }`}
           >
             {cat}

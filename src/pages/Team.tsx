@@ -3,8 +3,8 @@ import Teams from '@/component/Teams'
 
 const Team = () => {
   return (
-    <div className='flex justify-center items-center flex-col'>
-            <div className="mt-5  ">
+    <div className='flex justify-center items-center flex-col mb-8'>
+            <div className="mt-5  text-center">
         <p className="text-2xl italic font-semibold ">
           "We are the hearts and hands powering {" "}
           <span className="text-red-500"> The Helping Human Foundation." </span>

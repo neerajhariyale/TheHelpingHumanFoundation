@@ -2,7 +2,6 @@
 import Hero from "@/component/Hero";
 import Teams from "@/component/Teams";
 import Donation1 from "@/component/Donation1";
-import Gallery from "@/component/Gallery";
 import WelfareServices from "@/component/WelfareServices";
 import Footer from "@/component/Footer";
 import { BlurFade } from "@/components/magicui/blur-fade";

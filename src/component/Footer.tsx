@@ -8,7 +8,7 @@ const Footer = () => {
   //  social media links and phone number
   const phoneNumber = "+919079554009";
   const instagramLink = "https://www.instagram.com/ekhidaata_foundation/?hl=en";
-  const youtubeLink = "https://www.youtube.com/@ekhidaata_foundation";
+  //const youtubeLink = "https://www.youtube.com/@ekhidaata_foundation";
   const whatsappLink = "https://whatsapp.com/channel/0029VbB4AuMFy726CvgA8R2T"
   // const gmailLink = "thehelpinghumanfoundation@yahoo.com";
 

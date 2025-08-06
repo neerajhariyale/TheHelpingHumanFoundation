@@ -51,6 +51,7 @@ interface DonateFormProps {
     subCategory?: string;
     amount?: number;
     utr?: string;
+    quantity?: number; 
     date?: string;
   };
 }

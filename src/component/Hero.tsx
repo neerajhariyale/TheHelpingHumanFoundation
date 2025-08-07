@@ -1,7 +1,6 @@
 // import React from 'react'
 
 import BlurText from "@/components/magicui/BlurText";
-import { RainbowButtonDemo } from "./RainbowButtonDemo";
 import { NumberTickerDemo } from "./NumberTickerDemo";
 import {  useNavigate } from "react-router-dom";
 

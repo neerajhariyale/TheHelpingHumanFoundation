@@ -16,8 +16,20 @@ import workimage15 from "../assets/workPhotos/workimage15.jpg";
 import workimage16 from "../assets/workPhotos/workimage16.jpg";
 import workimage17 from "../assets/workPhotos/workimage17.jpg";
 import workimage18 from "../assets/workPhotos/workimage18.jpg";
+import workimage19 from "../assets/workPhotos/workimage19.jpg";
+import workimage20 from "../assets/workPhotos/workimage20.jpg";
+import workimage21 from "../assets/workPhotos/workimage21.jpg";
+import workimage22 from "../assets/workPhotos/workimage22.jpg";
+import workimage23 from "../assets/workPhotos/workimage23.jpg";
+import workimage24 from "../assets/workPhotos/workimage24.jpg";
 
 const images = [
+  workimage19,
+  workimage20,
+  workimage21,
+  workimage22,
+  workimage23,
+  workimage24,
   workimage1,
   workimage2,
   workimage3,

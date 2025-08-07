@@ -199,15 +199,14 @@ const DonateForm: React.FC<DonateFormProps> = ({
 
     // Compose WhatsApp message
     const message = `
-📋 *New Donation Submission*:
+🧾 *New Donation Submission*:
 
-👤 *Name:* ${data.name}
+👦🏻 *Name:* ${data.name}
 📞 *Mobile:* ${data.mobile}
 📧 *Email:* ${data.email}
 📍 *Place:* ${data.place}
 📅 *Date:* ${data.date}
-🏷 *Category:* ${data.category}
-${data.subCategory ? `📌 *Sub-category:* ${data.subCategory}\n` : ""}
+🏷 *Category:* ${data.category} ${data.subCategory ? `☺️ *Sub-category:* ${data.subCategory}` : ""}
 🔢 *Quantity:* ${data.quantity}
 💰 *Amount:* ₹${data.amount}
 🔁 *UTR Number:* ${data.utr}

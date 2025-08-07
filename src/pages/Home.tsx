@@ -7,11 +7,21 @@ import Footer from "@/component/Footer";
 import { BlurFade } from "@/components/magicui/blur-fade";
 import Copyright from "@/component/Copyright";
 import CarouselPlugin from "@/component/Coursel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
   return (
      <div className="w-full md:w-11/12 lg:w-11/12 xl:w-11/12 flex flex-col justify-center items-center ">
-
+    
+    <a
+  href="https://wa.me/919079554009" // Replace with your own number+91 
+  target="_blank"
+  rel="noopener noreferrer"
+  className="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white p-2 rounded-full shadow-lg z-50"
+>
+  <FontAwesomeIcon icon={faWhatsapp} size="2x" />
+</a>
         <CarouselPlugin/>
        <BlurFade delay={0.25} inView>
          

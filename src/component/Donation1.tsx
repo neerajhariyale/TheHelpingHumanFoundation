@@ -7,7 +7,9 @@ import virtualcakecutting from "@/assets/workPhotos/virtualcakecutting.jpg";
 import feeddog from "@/assets/workPhotos/straydogfeed.jpg";
 import birthdaycake from "@/assets/workPhotos/birthdaycakecutting.jpg";
 import planttree from "@/assets/workPhotos/planttree.jpg";
-
+import mowlish from "@/assets/workPhotos/education/Mowlish.jpg";
+import tashwin from "@/assets/workPhotos/education/Tashwin.jpg";
+import educationkit from "@/assets/workPhotos/educationkit.jpg"
 const donationData = [
   {
     leftText: "Feed a Home person",
@@ -51,16 +53,22 @@ const donationData = [
     image: planttree,
     category: "🌳 Environment",
   },
-  {
-    leftText: "Amay Patel",
-    rightText: "Raised: ₹3811 | Goal: ₹51600",
-    image: workimage2,
+   {
+    leftText: "Education Kit",
+    rightText: "₹200/per student",
+    image: educationkit,
     category: "📖 Education",
   },
   {
-    leftText: "Rani Singh",
+    leftText: "Mowlish.S",
     rightText: "Raised: ₹3811 | Goal: ₹51600",
-    image: workimage2,
+    image: mowlish,
+    category: "📖 Education",
+  },
+  {
+    leftText: "Tashwin.M",
+    rightText: "Raised: ₹3811 | Goal: ₹51600",
+    image: tashwin,
     category: "📖 Education",
   },
 ];

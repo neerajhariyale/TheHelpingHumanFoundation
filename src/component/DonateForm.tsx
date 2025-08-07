@@ -22,7 +22,7 @@ const categoryOptions: Record<string, string[]> = {
   BirthdayCelebration: ["Virtual Cake Cutting", "Birthday Cake"],
   Animal: ["Feed a Stray Dog"],
   Environment: ["Plant a tree"],
-  Education: ["Books", "Stationary Kit", "Fees"],
+  Education: [ "Stationary Kit", "Fees-Tashwin", "Fees-Mowlish"],
   Orphange: [],
   Healthcare: ["Medicines", "Checkup", "Surgery"],
   "Donor Iksha": [], // used when editing
@@ -36,8 +36,9 @@ const amountMap: Record<string, number> = {
   "Virtual Cake Cutting": 400,
   "Birthday Cake": 1600,
   "Plant a tree": 70,
-  Books: 100,
   "Stationary Kit": 200,
+  "Fees-Tashwin": 1000,
+  "Fees-Mowlish": 1000,
 };
 
 interface DonateFormProps {

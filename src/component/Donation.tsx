@@ -8,7 +8,8 @@ import birthdaycake from "@/assets/workPhotos/birthdaycakecutting.jpg"
 import planttree from "@/assets/workPhotos/planttree.jpg"
 import educationkit from "@/assets/workPhotos/educationkit.jpg"
 import { useNavigate } from "react-router-dom";
-
+import mowlish from "@/assets/workPhotos/education/Mowlish.jpg";
+import tashwin from "@/assets/workPhotos/education/Tashwin.jpg";
 // 1️⃣ Donation Data with Category
 const donationData = [
   {
@@ -60,9 +61,15 @@ const donationData = [
     category: "📖 Education",
   },
    {
-    leftText: "Rani Singh",
+    leftText: "Mowlish.S",
     rightText: "Raised: ₹3811 | Goal: ₹51600",
-    image: workimage2,
+    image: mowlish,
+    category: "📖 Education",
+  },
+  {
+    leftText: "Tashwin.M",
+    rightText: "Raised: ₹3811 | Goal: ₹51600",
+    image: tashwin,
     category: "📖 Education",
   },
 ];

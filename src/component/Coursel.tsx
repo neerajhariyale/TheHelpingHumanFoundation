@@ -47,12 +47,12 @@ const Coursel = () => {
   }, [currentIndex]);
 
   return (
-    <div className="relative w-full h- mx-auto overflow-hidden bg-black">
+    <div className="relative w-full  mx-auto overflow-hidden bg-black">
       {/* Image */}
       <img
         src={images[currentIndex].src}
         alt={`workimage-${currentIndex}`}
-        className="w-full h-full  object-contain   transition-all duration-500"
+        className="w-full h-full lg:h-[600px]  object-contain   transition-all duration-500"
       />
 
       {/* Left Arrow */}

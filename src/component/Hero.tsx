@@ -1,9 +1,10 @@
 // import React from 'react'
 
 import BlurText from "@/components/magicui/BlurText";
-import { AnimatedGradientTextDemo } from "@/component/AnimatedGradientTextDemo";
+import { RainbowButtonDemo } from "./RainbowButtonDemo";
 import { NumberTickerDemo } from "./NumberTickerDemo";
 import {  useNavigate } from "react-router-dom";
+
 
 
 // import RollingGallery from "./RollingGallery"
@@ -47,7 +48,7 @@ const Hero = () => {
         {/* <TextAnimateDemo/> */}
 
         <div className="w-fit mt-4 hover:cursor-pointer " onClick={() => navigate('/donate')}>
-          <AnimatedGradientTextDemo/>
+          <RainbowButtonDemo/>
         </div>
 
         {/* Number Stats */}
@@ -60,7 +61,7 @@ const Hero = () => {
               animateBy="words"
               direction="top"
               onAnimationComplete={handleAnimationComplete}
-              className="text-md  md:text-lg lg:text-lg xl:text-lg  font-semibold"
+              className="text-sm  md:text-lg lg:text-lg xl:text-lg  font-semibold"
             />
             <NumberTickerDemo number={9} suffix="Lakh+" />
           </div> 
@@ -74,7 +75,7 @@ const Hero = () => {
               animateBy="words"
               direction="top"
               onAnimationComplete={handleAnimationComplete}
-               className="text-md  md:text-lg lg:text-lg xl:text-lg  font-semibold"
+               className="text-sm  md:text-lg lg:text-lg xl:text-lg  font-semibold"
             />
             <NumberTickerDemo number={8.45} suffix="Lakh+" />
           </div> 
@@ -87,7 +88,7 @@ const Hero = () => {
               animateBy="words"
               direction="top"
               onAnimationComplete={handleAnimationComplete}
-              className="text-md  md:text-lg lg:text-lg xl:text-lg  font-semibold"
+              className="text-sm  md:text-lg lg:text-lg xl:text-lg  font-semibold"
             />
             <NumberTickerDemo number={28} suffix="K+" />
           </div>
@@ -95,14 +96,14 @@ const Hero = () => {
 
           <div className="flex flex-col justify-center items-center">
             <BlurText
-              text="Donation Raised ✋"
+              text="Active Donor 🩸"
               delay={150}
               animateBy="words"
               direction="top"
               onAnimationComplete={handleAnimationComplete}
-               className="text-md  md:text-lg lg:text-lg xl:text-lg  font-semibold"
+               className="text-sm  md:text-lg lg:text-lg xl:text-lg  font-semibold"
             />
-            <NumberTickerDemo number={9} suffix="Lakh+" />
+            <NumberTickerDemo number={4} suffix="K+" />
           </div> 
         </div> 
        

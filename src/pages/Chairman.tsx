@@ -3,9 +3,19 @@ import chairman from "@/assets/teamPhotos/Founder.jpg";
 import map from "@/assets/workPhotos/maplogo.png";
 import whatsapp from "@/assets/workPhotos/whatsapp.png";
 import gmail from "@/assets/workPhotos/gmail.png"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 const Chairman = () => {
   return (
     <div className="flex flex-col lg:flex-row xl:flex-row justify-center gap-4 border-2 rounded-lg w-11/12 p-2">
+      <a
+        href="https://wa.me/919079554009" // Replace with your own number+91
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white p-2 rounded-full shadow-lg z-50"
+      >
+        <FontAwesomeIcon icon={faWhatsapp} size="2x" />
+      </a>
       <div>
         <img src={chairman} alt="" className="rounded-lg" />
       </div>

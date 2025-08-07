@@ -22,6 +22,8 @@ import workimage21 from "@/assets/workPhotos/workimage21.jpg";
 import workimage22 from "@/assets/workPhotos/workimage22.jpg";
 import workimage23 from "@/assets/workPhotos/workimage23.jpg";
 import workimage24 from "@/assets/workPhotos/workimage24.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 const images = [
   workimage19,
@@ -57,6 +59,15 @@ const Gallery = () => {
   return (
     <>
       <div className=" w-11/12 mt-5 mx-auto flex flex-col items-center justify-evenly">
+
+       <a
+              href="https://wa.me/919079554009" // Replace with your own number+91
+              target="_blank"
+              rel="noopener noreferrer"
+              className="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white p-2 rounded-full shadow-lg z-50"
+            >
+              <FontAwesomeIcon icon={faWhatsapp} size="2x" />
+            </a>
         {/* Heading  */}
         <div className="flex flex-col items-center">
           <p className="text-center mt-1  text-3xl">📸 Gallery</p>

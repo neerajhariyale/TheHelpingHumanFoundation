@@ -51,7 +51,7 @@ const Hero = () => {
         </div>
 
         {/* Number Stats */}
-        <div className="w-8/12 flex flex-col sm:flex-row justify-around items-center gap-6 mt-6 ">
+         <div className="w-10/12 grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6 mt-6 ">
           {/* Card 1 */}
           <div className="flex flex-col justify-center items-center">
             <BlurText
@@ -60,7 +60,7 @@ const Hero = () => {
               animateBy="words"
               direction="top"
               onAnimationComplete={handleAnimationComplete}
-              className="text-lg font-semibold"
+              className="text-md  md:text-lg lg:text-lg xl:text-lg  font-semibold"
             />
             <NumberTickerDemo number={9} suffix="Lakh+" />
           </div> 
@@ -74,7 +74,7 @@ const Hero = () => {
               animateBy="words"
               direction="top"
               onAnimationComplete={handleAnimationComplete}
-              className="text-lg font-semibold"
+               className="text-md  md:text-lg lg:text-lg xl:text-lg  font-semibold"
             />
             <NumberTickerDemo number={8.45} suffix="Lakh+" />
           </div> 
@@ -87,11 +87,25 @@ const Hero = () => {
               animateBy="words"
               direction="top"
               onAnimationComplete={handleAnimationComplete}
-              className="text-lg font-semibold"
+              className="text-md  md:text-lg lg:text-lg xl:text-lg  font-semibold"
             />
             <NumberTickerDemo number={28} suffix="K+" />
           </div>
-        </div>
+
+
+          <div className="flex flex-col justify-center items-center">
+            <BlurText
+              text="Donation Raised ✋"
+              delay={150}
+              animateBy="words"
+              direction="top"
+              onAnimationComplete={handleAnimationComplete}
+               className="text-md  md:text-lg lg:text-lg xl:text-lg  font-semibold"
+            />
+            <NumberTickerDemo number={9} suffix="Lakh+" />
+          </div> 
+        </div> 
+       
 
         <div>
           

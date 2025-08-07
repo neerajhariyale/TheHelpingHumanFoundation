@@ -1,13 +1,13 @@
 
 const Copyright = () => {
   return (
-    <div className='w-full border-2 h-16  border-t-2 border-double border-gray-400 flex flex-col justify-center items-center text-center text-sm sm:text-base px-4'>
+    <div className='w-full h-16  border-t-2 border-double border-gray-400 flex flex-col justify-center items-center text-center text-xs sm:text-base px-4'>
       
       {/* Copyrtight Section */}
       <p className='font-semibold'>&copy; 2025 The Helping Human Foundation. All rights reserved.</p>
 
       {/* Developed Section */}
-      <p>
+      {/* <p>
         Developed with <span role="img" aria-label="love">❤️</span> by{" "}
         <a 
           href="https://www.neerajhariyale.tech" 
@@ -17,7 +17,7 @@ const Copyright = () => {
         >
           Neeraj Hariyale
         </a>
-      </p>
+      </p> */}
     </div>
   )
 }

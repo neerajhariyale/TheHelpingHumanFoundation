@@ -8,7 +8,6 @@ import feeddog from "@/assets/workPhotos/straydogfeed.jpg";
 import birthdaycake from "@/assets/workPhotos/birthdaycakecutting.jpg";
 import planttree from "@/assets/workPhotos/planttree.jpg";
 
-
 const donationData = [
   {
     leftText: "Feed a Home person",
@@ -127,9 +126,11 @@ const Donation1 = () => {
   const displayedCards = filteredData.slice(0, visibleCount);
 
   return (
-    <div className="p-6 ">
+    <div className="p-2 w-full mx-auto ">
+
+      
       {/* Filter Buttons */}
-      <div className="mb-6 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+      <div className="mb-6  scrollbar-track-transparent w-72 mx-auto md:w-96 lg:w-full xl:w-full overflow-x-auto whitespace-nowrap p-2">
         <div className="inline-flex gap-3 px-2 whitespace-nowrap">
           {categories.map((cat) => (
             <button
@@ -146,6 +147,8 @@ const Donation1 = () => {
           ))}
         </div>
       </div>
+
+      
 
       {/* Cards Grid */}
       <div

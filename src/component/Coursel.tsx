@@ -6,12 +6,16 @@ import banner1 from "@/assets/workPhotos/banner/banner1.jpg"
 import banner2 from "@/assets/workPhotos/banner/banner2.jpg"
 import banner3 from "@/assets/workPhotos/banner/banner3.jpg"
 import banner4 from "@/assets/workPhotos/banner/banner4.jpg"
+import banner5 from "@/assets/workPhotos/banner/banner5.jpg"
+import bannervideo1 from "@/assets/workPhotos/banner/bannervideo1.mp4"
 
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 const Coursel = () => {
   // Image data
   const images = [
+    {src: banner5},
+    {src: bannervideo1},
     { src : banner1 },
     { src: banner2 },
     { src: banner3},
@@ -43,12 +47,12 @@ const Coursel = () => {
   }, [currentIndex]);
 
   return (
-    <div className="relative w-full h-[600px] mx-auto overflow-hidden bg-black">
+    <div className="relative w-full h- mx-auto overflow-hidden bg-black">
       {/* Image */}
       <img
         src={images[currentIndex].src}
         alt={`workimage-${currentIndex}`}
-        className="w-full h-full  object-contain  rounded-xl transition-all duration-500"
+        className="w-full h-full  object-contain   transition-all duration-500"
       />
 
       {/* Left Arrow */}

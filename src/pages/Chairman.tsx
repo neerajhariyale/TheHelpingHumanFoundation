@@ -110,7 +110,7 @@ const Chairman = () => {
                 />
               </g>
             </svg>
-            <a href="https://instagram.com" target="_blank">
+            <a href="https://www.instagram.com/ravi_dahiya_jnvu?igsh=aXA0aGdhYm1uZWg3" target="_blank">
               <p>Ravi Prakash Dahiya</p>
             </a>
           </div>

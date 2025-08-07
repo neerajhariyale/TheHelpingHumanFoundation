@@ -106,7 +106,7 @@ const Donation = () => {
   return (
     <div className="p-6">
       {/* Filter Buttons */}
-      <div className="flex flex-wrap gap-3 justify-center mb-6">
+      <div className="mb-6  scrollbar-track-transparent w-72 mx-auto md:w-96 lg:w-full xl:w-full overflow-x-auto whitespace-nowrap p-2">
         {categories.map((cat) => (
           <button
             key={cat}

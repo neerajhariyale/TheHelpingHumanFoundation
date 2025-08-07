@@ -207,13 +207,13 @@ const DonateForm: React.FC<DonateFormProps> = ({
 📧 *Email:* ${data.email}
 📍 *Place:* ${data.place}
 📅 *Date:* ${data.date}
-🏷 *Category:* ${data.category} ${data.subCategory ? `☺️ *Sub-category:* ${data.subCategory}` : ""}
+🏷 *Category:* ${data.category} ${data.subCategory ? `\n☺️ *Sub-category:* ${data.subCategory}` : ""}
 🔢 *Quantity:* ${data.quantity}
 💰 *Amount:* ₹${data.amount}
 🔁 *UTR Number:* ${data.utr}
   `;
 
-    const whatsappNumber = "917999873846"; // Replace with NGO number
+    const whatsappNumber = "919079554009"; // Replace with NGO number
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
       message
     )}`;

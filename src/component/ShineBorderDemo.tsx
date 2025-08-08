@@ -34,7 +34,7 @@ export function ShineBorderDemo() {
 📍 City: ${city}
 💬 Message: ${message}`;
 
-    const whatsappURL = `https://wa.me/917999873846?text=${encodeURIComponent(text)}`;
+    const whatsappURL = `https://wa.me/919079554009?text=${encodeURIComponent(text)}`;
 
     window.open(whatsappURL, "_blank");
   };

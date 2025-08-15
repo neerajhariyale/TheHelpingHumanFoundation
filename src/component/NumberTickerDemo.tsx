@@ -14,12 +14,12 @@ export function NumberTickerDemo({ number, suffix = "" }:Props) {
       {/* Animated Number */}
       <NumberTicker
         value={parseFloat(number.toFixed(2))}
-        className="whitespace-pre-wrap text-3xl md:text-4xl lg:text-6xl xl-text-6xl font-medium tracking-tighter text-black dark:text-white text-center"
+        className="whitespace-pre-wrap text-2xl md:text-4xl lg:text-6xl xl-text-6xl font-medium tracking-tighter text-black dark:text-white text-center"
       />
 
       {/* Suffix Displayed Next to the Number */}
       {suffix && (
-        <span className="text-2xl md:text-3xl lg:text-3xl xl:text-3xl font-semibold text-black dark:text-white">
+        <span className="text-xl md:text-3xl lg:text-3xl xl:text-3xl font-semibold text-black dark:text-white">
           {suffix}
         </span>
       )}

@@ -3,8 +3,8 @@ const AboutUs = () => {
     <div className="w-11/12 mx-auto p-6  bg-white ">
       {/* About Us Section */}
       <div className="mb-6">
-        <h2 className="text-2xl font-semibold text-center">About Us</h2>
-        <div className="w-20 border-b-4 border-red-500 mx-auto mt-2 mb-4"></div>
+        <h2 className="text-3xl  text-center">About Us</h2>
+        <div className="w-30 border-b-4 border-pink-500 mx-auto mt-1 mb-4"></div>
         <div className="border shadow-xl rounded-lg flex justify-center items-center flex-col p-2">
             <h4 className="text-md font-bold text-center text-gray-700">FOUNDED IN 2023</h4>
         <p className="mt-3 text-gray-700 leading-relaxed">
@@ -19,8 +19,8 @@ const AboutUs = () => {
 
       {/* Vision Section */}
       <div className="mb-6">
-        <h2 className="text-2xl font-semibold text-center">Our Vision</h2>
-        <div className="w-20 border-b-4 border-red-500 mx-auto mt-2 mb-4"></div>
+        <h2 className="text-3xl text-center">Our Vision</h2>
+        <div className="w-32 border-b-4 border-pink-500 mx-auto mt-1 mb-4"></div>
         <div className="border shadow-xl rounded-lg flex justify-center items-center  flex-col p-2">
         <p className="text-gray-700 leading-relaxed">
           We envision a world where every individual, irrespective of their origins, is embraced
@@ -34,8 +34,8 @@ const AboutUs = () => {
 
       {/* Mission Section */}
       <div>
-        <h2 className="text-2xl font-semibold text-center">Our Mission</h2>
-        <div className="w-20 border-b-4 border-red-500 mx-auto mt-2 mb-4"></div>
+        <h2 className="text-3xl  text-center">Our Mission</h2>
+        <div className="w-38 border-b-4 border-pink-500 mx-auto mt-1 mb-4"></div>
         <div className="border shadow-xl rounded-lg flex justify-center items-center flex-col p-2">
         <p className="text-gray-700 leading-relaxed">
           The Helping Human Foundation is committed to serving as a guiding light of empathy

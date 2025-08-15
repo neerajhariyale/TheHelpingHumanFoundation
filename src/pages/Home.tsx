@@ -33,7 +33,7 @@ const Home = () => {
             <p className="text-center mt-8  text-3xl">
               About Us
             </p>
-            <div className="w-16 border-2 border-red-500 mt-2"></div>
+            <div className="w-30 border-2 border-pink-500 mt-1"></div>
           </div>
         </div>
         <Aboutus />
@@ -43,9 +43,9 @@ const Home = () => {
         <div className="mt-5 w-11/12 h-contain mx-auto flex flex-col items-center justify-evenly mb-4">
           <div className="flex flex-col items-center">
             <p className="text-center mt-8  text-3xl">
-              Our Welfare Services ❤️‍🩹
+              Our Welfare Services
             </p>
-            <div className="w-16 border-2 border-red-500 mt-2"></div>
+            <div className="w-68 border-2 border-pink-500 mt-2"></div>
           </div>
         </div>
         <WelfareServices />
@@ -54,8 +54,8 @@ const Home = () => {
       <BlurFade delay={0.25 * 2} inView>
         <div className="mt-5 w-11/12 h-contain mx-auto flex flex-col items-center justify-evenly mb-4">
           <div className="flex flex-col items-center">
-            <p className="text-center mt-8  text-3xl">Make a Contribution 🤝</p>
-            <div className="w-26 border-2 border-red-500 mt-2"></div>
+            <p className="text-center mt-8  text-3xl">Make a Contribution</p>
+            <div className="w-68 border-2 border-pink-500 mt-2"></div>
           </div>
         </div>
         <Donation1 />
@@ -75,7 +75,7 @@ const Home = () => {
         <div className="mt-5 w-11/12 h-contain mx-auto flex flex-col items-center justify-evenly">
           <div className="flex flex-col items-center">
             <p className="text-center mt-8  text-3xl">Meet Our Team</p>
-            <div className="w-16 border-2 border-red-500 mt-1"></div>
+            <div className="w-48 border-2 border-pink-500 mt-1"></div>
           </div>
         </div>
         <Teams />

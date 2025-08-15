@@ -91,7 +91,7 @@ const DonationCard = ({ leftText, rightText, image }: Props) => {
         <p className="text-sm font-medium text-gray-600">{rightText}</p>
       </div>
       <div className="px-4 pb-4">
-        <button onClick={() => navigate('/donation-form')} className="w-full bg-black text-white py-2 rounded-xl text-center font-semibold transition-all duration-300 hover:bg-white hover:text-black hover:border hover:border-gray-600 hover:cursor-pointer">
+        <button onClick={() => navigate('/donation-form')} className="w-full bg-pink-500 text-white py-2 rounded-xl text-center font-semibold transition-all duration-300 hover:bg-pink-600 hover:border hover:border-pink-600 hover:cursor-pointer">
           Donate
         </button>
       </div>
@@ -113,15 +113,15 @@ const Donation = () => {
   return (
     <div className="p-6">
       {/* Filter Buttons */}
-      <div className="mb-6  scrollbar-track-transparent w-72 mx-auto md:w-96 lg:w-full xl:w-full overflow-x-auto whitespace-nowrap p-2">
+      <div className="mb-6 scrollbar-track-transparent w-72 mx-auto md:w-96 lg:w-full xl:w-full overflow-x-auto whitespace-nowrap p-2">
         {categories.map((cat) => (
           <button
             key={cat}
             onClick={() => setFilter(cat)}
-            className={`px-4 py-2 rounded-full border font-medium transition ${
+            className={`px-4 py-2 p-2 rounded-full border ml-1 mr-1 font-medium transition ${
               filter === cat
-                ? "bg-black text-white border-black"
-                : "bg-white text-black border-white hover:bg-black hover:text-white"
+                ? "bg-pink-500 text-white border-pink-500"
+                : "bg-white  border-pink=500 hover:bg-pink-500 hover:text-white hover:cursor-pointer"
             }`}
           >
             {cat}

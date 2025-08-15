@@ -58,7 +58,7 @@ const Gallery = () => {
 
   return (
     <>
-      <div className=" w-11/12 mt-5 mx-auto flex flex-col items-center justify-evenly">
+      <div className=" w-11/12 mt-2 mx-auto flex flex-col items-center justify-evenly">
 
        <a
               href="https://wa.me/919079554009" // Replace with your own number+91
@@ -71,7 +71,7 @@ const Gallery = () => {
         {/* Heading  */}
         <div className="flex flex-col items-center">
           <p className="text-center mt-1  text-3xl">📸 Gallery</p>
-          <div className="w-14 border-2 border-red-500 mt-1"></div>
+          <div className="w-32 border-2 border-pink-500 mt-2"></div>
         </div>
       </div>
 

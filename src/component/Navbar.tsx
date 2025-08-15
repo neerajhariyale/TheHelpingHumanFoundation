@@ -75,8 +75,8 @@ const Navbar = () => {
                 key={item.path}
                 className={`cursor-pointer transition duration-100 ${
                   isActive(item.path)
-                    ? "border-b-2 border-pink-700 font-semibold text-pink-600"
-                    : "hover:border-b-2 hover:border-pink-700"
+                    ? "border-b-2 border-pink-600 font-semibold text-pink-600"
+                    : "hover:border-b-2 hover:border-pink-600"
                 }`}
                 onClick={() => {
                   if (item.isPdf) {
@@ -96,7 +96,7 @@ const Navbar = () => {
         <div className="hidden md:flex">
           <BlurFade delay={0.25} inView>
             <button
-              className="bg-white border-1 border-black rounded-full h-10 w-32 text-black hover:bg-pink-500 hover:text-white hover:border-1 hover:border-pink-500 transition hover:cursor-pointer"
+              className="bg-pink-500 rounded-full h-10 w-32 text-white hover:bg-pink-600 hover:text-white hover:border-1 hover:border-pink-500 transition hover:cursor-pointer"
               onClick={() => navigate("/donate")}
             >
               Donate
@@ -108,10 +108,10 @@ const Navbar = () => {
 
         <div className="md:hidden flex flex-col items-center p-1">
           <BlurFade delay={0.25} inView>
-            <h1 className="text-sm font-semibold text-black">
+            <h1 className="text-sm font-semibold text-pink-600">
               The Helping Human Foundation
             </h1>
-            <p className="text-[10px] text-gray-500 italic">
+            <p className="text-[10px] text-gray-700 italic text-center">
               "Give a hand, change a life"
             </p>
           </BlurFade>
@@ -140,8 +140,8 @@ const Navbar = () => {
               key={item.path}
               className={`cursor-pointer text-lg ${
                 isActive(item.path)
-                  ? "text-red-600 font-semibold underline"
-                  : "hover:text-red-500"
+                  ? "text-pink-600 font-semibold underline"
+                  : "hover:text-pink-600"
               }`}
               onClick={() => {
                 if (item.isPdf) {
@@ -156,7 +156,7 @@ const Navbar = () => {
             </p>
           ))}
           <button
-            className="bg-white border-1 border-black rounded-full h-10 w-32 text-black hover:bg-pink-500 hover:text-white hover:border-1 hover:border-pink-500 transition hover:cursor-pointer"
+            className="bg-pink-500  rounded-full h-10 w-32 text-white hover:bg-pink-600 hover:text-white hover:border-1 hover:border-pink-500 transition hover:cursor-pointer"
             onClick={() => {
               navigate("/donate");
               setIsMobileMenuOpen(false);

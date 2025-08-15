@@ -35,7 +35,7 @@ const Hero = () => {
           animateBy="words"
           direction="top"
           onAnimationComplete={handleAnimationComplete}
-          className="text-xl sm:text-3xl md:text-4xl font-semibold"
+          className="text-xl sm:text-3xl md:text-4xl font-semibold text-pink-600"
         />
 
         <p className="text-sm sm:text-base md:text-lg px-2 md:px-6 mt-4 text-gray-500">
@@ -46,8 +46,8 @@ const Hero = () => {
         </p>
         {/* <TextAnimateDemo/> */}
 
-        <div className="w-32  mt-4 hover:cursor-pointer  bg-blue-400 rounded-lg p-2 text-white hover:bg-blue-600 text-center mx-auto" onClick={() => navigate('/donate')}>
-          <button className="">Donate 🎉</button>
+        <div className="w-32  mt-4 hover:cursor-pointer  bg-pink-500 rounded-lg p-2 text-white hover:bg-pink-700 text-center mx-auto" onClick={() => navigate('/donate')}>
+          <button className="hover:cursor-pointer">Donate</button>
         </div>
 
         {/* Number Stats */}
@@ -55,12 +55,12 @@ const Hero = () => {
           {/* Card 1 */}
           <div className="flex flex-col justify-center items-center">
             <BlurText
-              text="Donation Raised ✋"
+              text="Donation Raised"
               delay={150}
               animateBy="words"
               direction="top"
               onAnimationComplete={handleAnimationComplete}
-              className="text-sm  md:text-lg lg:text-lg xl:text-lg  font-semibold"
+              className="text-sm  md:text-lg lg:text-lg xl:text-lg  font-semibold text-pink-600"
             />
             <NumberTickerDemo number={9} suffix="Lakh+" />
           </div> 
@@ -69,12 +69,12 @@ const Hero = () => {
           {/* Card 2 */}
           <div className="flex flex-col justify-center items-center">
             <BlurText
-              text="Donation Made 🎊"
+              text="Donation Made"
               delay={150}
               animateBy="words"
               direction="top"
               onAnimationComplete={handleAnimationComplete}
-               className="text-sm  md:text-lg lg:text-lg xl:text-lg  font-semibold"
+               className="text-sm  md:text-lg lg:text-lg xl:text-lg  font-semibold text-pink-600"
             />
             <NumberTickerDemo number={8.45} suffix="Lakh+" />
           </div> 
@@ -82,12 +82,12 @@ const Hero = () => {
           {/* Card 3 */}
           <div className="flex flex-col justify-center items-center">
             <BlurText
-              text="Meals Served 🍛"
+              text="Meals Served"
               delay={150}
               animateBy="words"
               direction="top"
               onAnimationComplete={handleAnimationComplete}
-              className="text-sm  md:text-lg lg:text-lg xl:text-lg  font-semibold"
+              className="text-sm  md:text-lg lg:text-lg xl:text-lg  font-semibold text-pink-600"
             />
             <NumberTickerDemo number={28} suffix="K+" />
           </div>
@@ -95,12 +95,12 @@ const Hero = () => {
 
           <div className="flex flex-col justify-center items-center">
             <BlurText
-              text="Active Donor 🩸"
+              text="Active Donor"
               delay={150}
               animateBy="words"
               direction="top"
               onAnimationComplete={handleAnimationComplete}
-               className="text-sm  md:text-lg lg:text-lg xl:text-lg  font-semibold"
+               className="text-sm  md:text-lg lg:text-lg xl:text-lg  font-semibold text-pink-600"
             />
             <NumberTickerDemo number={4} suffix="K+" />
           </div> 

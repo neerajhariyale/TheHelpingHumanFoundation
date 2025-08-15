@@ -17,8 +17,8 @@ const Donate = () => {
       </a>
         {/* Heading  */}
         <div className="flex flex-col items-center">
-          <p className="text-center mt-1  text-3xl">Donation 🎉</p>
-          <div className="w-14 border-2 border-red-500 mt-1"></div>
+          <p className="text-center mt-1  text-3xl">Donation </p>
+          <div className="w-32 border-2 border-pink-500 mt-1"></div>
         </div>
       </div>
 

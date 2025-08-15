@@ -92,7 +92,7 @@ const DonationCard = ({ leftText, rightText, image }: Props) => {
       <div className="px-4 pb-4">
         <button
           onClick={() => navigate("/donation-form")}
-          className="w-full bg-black text-white py-2 rounded-xl text-center font-semibold transition-all duration-300 hover:bg-white hover:text-black hover:border hover:border-gray-600 hover:cursor-pointer"
+          className="w-full bg-pink-500 text-white py-2 rounded-xl text-center font-semibold transition-all duration-300 hover:bg-pink-600 hover:border hover:border-pink-600 hover:cursor-pointer"
         >
           Donate
         </button>
@@ -144,10 +144,10 @@ const Donation1 = () => {
             <button
               key={cat}
               onClick={() => setFilter(cat)}
-              className={`px-4 py-2 rounded-full border font-medium transition shrink-0 ${
+              className={`px-4 py-2 rounded-full border mr-1 ml-1 font-medium transition shrink-0 ${
                 filter === cat
-                  ? "bg-black text-white border-black"
-                  : "bg-white text-black border-gray-300 hover:bg-black hover:text-white"
+                  ? "bg-pink-500 text-white border-pink-500"
+                : "bg-white  border-pink=500 hover:bg-pink-500 hover:text-white hover:cursor-pointer"
               }`}
             >
               {cat}
@@ -181,7 +181,7 @@ const Donation1 = () => {
       <div className="flex justify-center mt-6">
         <button
           onClick={() => navigate("/donate")}
-          className="bg-black text-white px-6 py-2 rounded-xl font-medium transition-all duration-300 hover:bg-white hover:text-black hover:border hover:border-gray-700"
+          className="bg-pink-500 text-white px-6 py-2 rounded-xl font-medium transition-all duration-300 hover:bg-pink-600 hover:cursor-pointer hover:border hover:border-pink-600"
         >
           View More
         </button>

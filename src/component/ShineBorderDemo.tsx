@@ -97,7 +97,7 @@ export function ShineBorderDemo() {
         </div>
       </CardContent>
       <CardFooter>
-        <Button className="w-full" onClick={handleJoinUs}>
+        <Button className="w-full bg-pink-500 hover:cursor-pointer hover:bg-pink-600" onClick={handleJoinUs}>
           Join Us
         </Button>
       </CardFooter>

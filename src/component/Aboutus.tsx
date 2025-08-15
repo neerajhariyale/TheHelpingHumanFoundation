@@ -1,6 +1,6 @@
 const Aboutus = () => {
   return (
-    <div className="border border-gray-300 rounded-lg p-6 w-11/12 mx-auto bg-white shadow-md flex justify-center items-center flex-col">
+    <div className="border border-gray-300 rounded-lg p-6 w-11/12 mx-auto bg-white shadow-lg flex justify-center items-center flex-col">
       <h2 className="text-xl font-semibold  text-center mb-4">WITH YOU TODAY AND TOMORROW</h2>
       <p className="mb-3 text-md">
         <span className="font-semibold">Ravi Prakash Dahiya’s</span> initiative to assist the homeless brings about significant

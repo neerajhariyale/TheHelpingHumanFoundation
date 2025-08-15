@@ -19,7 +19,7 @@ const Footer = () => {
       {/* Heading */}
       <div className="flex flex-col items-center">
         <p className="text-center mt-8  text-3xl">Follow Us for Updates</p>
-        <div className="w-16 border-2 border-red-500 mt-1"></div>
+        <div className="w-72 border-2 border-pink-500 mt-1"></div>
       </div>
 
       <div className="flex justify-center gap-5 items-center mt-4">

@@ -1,7 +1,7 @@
 const Aboutus = () => {
   return (
     <div className="border-1 border-pink-500 rounded-lg p-6 w-11/12 mx-auto bg-white shadow-lg flex justify-center items-center flex-col">
-      <h2 className="text-xl font-semibold  text-center mb-4">WITH YOU TODAY AND TOMORROW</h2>
+      <h2 className="text-lg lg:text-xl xl:text-xl  font-semibold  text-center mb-4">WITH YOU TODAY AND TOMORROW</h2>
       <p className="mb-3 text-md">
         <span className="font-semibold">Ravi Prakash Dahiya’s</span> initiative to assist the homeless brings about significant
         transformations in their lives. The Helping Human Foundation shelters, they receive

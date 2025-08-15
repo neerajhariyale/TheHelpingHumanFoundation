@@ -28,14 +28,14 @@ const Hero = () => {
       </div> */}
 
       {/* Right Content */}
-      <div className="w-full flex flex-col items-center text-center  mt-8 ">
+      <div className="w-full  flex flex-col items-center text-center  mt-8 ">
         <BlurText
           text="The Helping Human Foundation"
           delay={150}
           animateBy="words"
           direction="top"
           onAnimationComplete={handleAnimationComplete}
-          className="text-xl sm:text-3xl md:text-4xl font-semibold text-pink-600"
+          className="text-xl sm:text-3xl md:text-4xl font-semibold text-pink-600 "
         />
 
         <p className="text-sm sm:text-base md:text-lg px-2 md:px-6 mt-4 text-gray-500">

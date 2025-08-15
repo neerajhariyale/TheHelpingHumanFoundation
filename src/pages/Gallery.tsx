@@ -70,8 +70,8 @@ const Gallery = () => {
             </a>
         {/* Heading  */}
         <div className="flex flex-col items-center">
-          <p className="text-center mt-1  text-3xl">📸 Gallery</p>
-          <div className="w-32 border-2 border-pink-500 mt-2"></div>
+          <p className="text-center mt-1 text-pink-500 text-3xl font-nautigal">📸 Gallery</p>
+          <div className="w-32 border-2 border-pink-600 mt-2"></div>
         </div>
       </div>
 

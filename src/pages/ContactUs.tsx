@@ -17,12 +17,12 @@ const ContactUs = () => {
       </a>
         {/* Heading  */}
         <div className="flex flex-col items-center">
-          <p className="text-center mt-1  text-3xl">Join Us 🫱🏻‍🫲🏻</p>
+          <p className="text-center mt-1  text-3xl text-pink-500 font-nautigal">Join Us 🫱🏻‍🫲🏻</p>
           <div className="w-32 border-2 border-pink-500 mt-1"></div>
         </div>
       </div>
 
-      <p className="text-center text-gray-600 mb-5 max-w-2xl mx-auto mt-4">
+      <p className="text-center  text-gray-600 mb-5 max-w-2xl mx-auto mt-4">
         Join us in making a difference! Be a part of our NGO to spread kindness,
         support the needy, and bring positive change. Your small step can impact
         many lives.

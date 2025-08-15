@@ -49,7 +49,7 @@ const WelfareServices = () => {
       {services.map((item, index) => (
         <div
           key={index}
-          className="bg-white border shadow-md rounded-xl p-5 flex flex-col items-center text-center hover:shadow-xl transition-all duration-300"
+          className="bg-white border-1 border-pink-500 shadow-md rounded-xl p-5 flex flex-col items-center text-center hover:shadow-xl transition-all duration-300"
         >
           <div className="text-4xl mb-3">{item.emoji}</div>
           <h3 className="text-xl font-semibold mb-2">{item.title}</h3>

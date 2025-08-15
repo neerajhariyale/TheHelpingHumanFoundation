@@ -60,17 +60,17 @@ const Teams = () => {
           {founderData.map((item, index) => (
             <div
               key={index}
-              className="w-80 max-w-sm h-96 border-2 border-gray-300 shadow-xl transition-shadow duration-100 hover:shadow-2xl rounded-2xl p-6 cursor-pointer bg-blend-soft-light mx-auto"
+              className="w-80 max-w-sm h-96 border-1 border-pink-500 shadow-xl transition-shadow duration-100 hover:shadow-2xl rounded-2xl p-6 cursor-pointer bg-blend-soft-light mx-auto"
             >
               <img
                 src={item.src}
                 alt=""
                 className="h-24 w-24 object-cover mx-auto rounded-full"
               />
-              <p className="text-center text-xl font-semibold mt-3">
+              <p className="text-center text-xl font-semibold mt-3 text-pink-500">
                 {item.name}
               </p>
-              <p className="text-center text-md text-gray-700 font-semibold">
+              <p className="text-center text-md text-gray-800 font-semibold">
                 {item.position}
               </p>
               <p className="text-center text-gray-500  text-sm mt-2">
@@ -78,7 +78,7 @@ const Teams = () => {
               </p>
               <div className="flex justify-center mt-3">
                 <a href={item.social} target="_blank" rel="noopener noreferrer">
-                  <FaInstagram className="text-2xl text-red-500 hover:text-red-800 transition duration-200" />
+                  <FaInstagram className="text-2xl text-pink-500 hover:text-pink-800 transition duration-200" />
                 </a>
               </div>
             </div>
@@ -92,17 +92,17 @@ const Teams = () => {
           {memberData.map((item, index) => (
             <div
               key={index}
-              className="w-80 max-w-sm h-96 border-2 border-gray-300 shadow-xl transition-shadow duration-100 hover:shadow-2xl rounded-2xl p-6 cursor-pointer bg-blend-soft-light mx-auto"
+              className="w-80 max-w-sm h-96 border-1 border-pink-600 shadow-xl transition-shadow duration-100 hover:shadow-2xl rounded-2xl p-6 cursor-pointer bg-blend-soft-light mx-auto"
             >
               <img
                 src={item.src}
                 alt=""
                 className="h-24 w-24 object-cover mx-auto rounded-full"
               />
-              <p className="text-center text-xl font-semibold mt-3">
+              <p className="text-center text-xl font-semibold mt-3 text-pink-500">
                 {item.name}
               </p>
-              <p className="text-center text-md text-gray-700 font-semibold">
+              <p className="text-center text-md text-gray-800 font-semibold">
                 {item.position}
               </p>
               <p className="text-center text-gray-500 text-sm mt-2">
@@ -110,7 +110,7 @@ const Teams = () => {
               </p>
               <div className="flex justify-center mt-3">
                 <a href={item.social} target="_blank" rel="noopener noreferrer">
-                  <FaInstagram className="text-2xl text-red-500 hover:text-red-800 transition duration-200" />
+                  <FaInstagram className="text-2xl text-pink-500 hover:text-pink-600 transition duration-200" />
                 </a>
               </div>
             </div>

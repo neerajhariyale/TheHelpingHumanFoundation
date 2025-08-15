@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 const Chairman = () => {
   return (
-    <div className="flex flex-col lg:flex-row xl:flex-row justify-center gap-4 border-2 rounded-lg w-11/12 p-2">
+    <div className="flex flex-col lg:flex-row xl:flex-row justify-center gap-4 border-1 border-pink-500 rounded-lg w-11/12 p-2">
       <a
         href="https://wa.me/919079554009" // Replace with your own number+91
         target="_blank"
@@ -24,7 +24,7 @@ const Chairman = () => {
         <h1 className="text-3xl text-center mt-3 font-semibold text-pink-500 tracking-wide">
           Ravi Prakash Dahiya
         </h1>
-        <p className="text-md text-center  font-light text-gray-800 ">
+        <p className="text-md text-center   text-gray-800 ">
           Founder & Chairman
         </p>
         <p className="mt-3 p-4 ">

@@ -83,7 +83,7 @@ const DonationCard = ({ leftText, rightText, image }: Props) => {
   const navigate = useNavigate();
 
   return (
-    <div className="max-w-sm bg-white shadow-lg rounded-2xl overflow-hidden border border-gray-200">
+    <div className="max-w-sm bg-white shadow-lg rounded-2xl overflow-hidden border-1  border-pink-500">
       <img src={image} alt="Donation" className="w-64 h-52 object-cover" />
       <div className="p-4 flex flex-col justify-between items-center">
         <h2 className="text-lg font-semibold text-gray-800">{leftText}</h2>

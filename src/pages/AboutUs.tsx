@@ -3,7 +3,7 @@ const AboutUs = () => {
     <div className="w-11/12 mx-auto p-6  bg-white ">
       {/* About Us Section */}
       <div className="mb-12">
-        <h2 className="text-3xl  text-center text-pink-500 font-nautigal">About Us</h2>
+        <h2 className="text-3xl  text-center  font-nautigal">About Us</h2>
         <div className="w-30 border-b-3 border-pink-600 mx-auto mt-1 mb-4"></div>
         <div className="border-1 border-pink-500 shadow-xl rounded-lg flex justify-center items-center flex-col p-2">
             <h4 className="text-md font-semibold text-center text-gray-800">FOUNDED IN 2023</h4>
@@ -19,7 +19,7 @@ const AboutUs = () => {
 
       {/* Vision Section */}
       <div className="mb-12">
-        <h2 className="text-3xl text-center text-pink-500 font-nautigal">Our Vision</h2>
+        <h2 className="text-3xl text-center font-nautigal">Our Vision</h2>
         <div className="w-32 border-b-3 border-pink-600 mx-auto mt-1 mb-4"></div>
         <div className="border-1 border-pink-500 shadow-xl rounded-lg flex justify-center items-center  flex-col p-2">
         <p className="text-gray-700 leading-relaxed mt-3 mb-8 p-2">
@@ -34,7 +34,7 @@ const AboutUs = () => {
 
       {/* Mission Section */}
       <div>
-        <h2 className="text-3xl  text-center text-pink-500 font-nautigal">Our Mission</h2>
+        <h2 className="text-3xl  text-center  font-nautigal">Our Mission</h2>
         <div className="w-38 border-b-3 border-pink-600 mx-auto mt-1 mb-4"></div>
         <div className="border-1 border-pink-500 shadow-xl rounded-lg flex justify-center items-center flex-col p-2">
         <p className="text-gray-700 leading-relaxed mt-3 mb-8 p-2">

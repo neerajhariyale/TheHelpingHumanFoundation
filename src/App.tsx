@@ -80,6 +80,7 @@ import Team from "./pages/Team";
 import Gallery from "./pages/Gallery";
 import DonateForm from "./component/DonateForm";
 import Chairman from "./pages/Chairman";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
 
@@ -93,6 +94,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/about-us" element={<AboutUs />} />
           <Route path="/joinus" element={<ContactUs />} />
           <Route path="/team" element={<Team />} />
           <Route path="/donation-form" element={<DonateForm/>} />

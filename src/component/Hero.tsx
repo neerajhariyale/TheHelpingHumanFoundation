@@ -47,7 +47,7 @@ const Hero = () => {
         {/* <TextAnimateDemo/> */}
 
         <div className="w-32  mt-4 hover:cursor-pointer  bg-pink-500 rounded-lg p-2 text-white hover:bg-pink-700 text-center mx-auto" onClick={() => navigate('/donate')}>
-          <button className="hover:cursor-pointer">Donate</button>
+          <button className="hover:cursor-pointer">DONATE</button>
         </div>
 
         {/* Number Stats */}

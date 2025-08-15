@@ -99,7 +99,7 @@ const Navbar = () => {
               className="bg-pink-500 rounded-full h-10 w-32 text-white hover:bg-pink-600 hover:text-white hover:border-1 hover:border-pink-500 transition hover:cursor-pointer"
               onClick={() => navigate("/donate")}
             >
-              Donate
+              DONATE
             </button>
           </BlurFade>
         </div>
@@ -162,7 +162,7 @@ const Navbar = () => {
               setIsMobileMenuOpen(false);
             }}
           >
-            Donate
+            DONATE
           </button>
         </div>
       )}

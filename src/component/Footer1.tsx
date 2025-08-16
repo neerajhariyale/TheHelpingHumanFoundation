@@ -1,4 +1,4 @@
-import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram,FaFacebook, FaWhatsapp } from "react-icons/fa";
 import { MdLocationOn, MdEmail, MdPhone } from "react-icons/md";
 import logo from "@/assets/workPhotos/logo1.png"
 import { useNavigate } from "react-router-dom";
@@ -49,9 +49,9 @@ const Footer1 = () => {
         <div className="mt-4">
           <p className="text-black text-lg font-semibold font-libertinus mb-3">Follow us on</p>
           <div className="flex space-x-4 text-2xl">
-            {/* <a href="#" className="text-pink-500 hover:text-white">
+            <a href="https://www.facebook.com/share/1G5MoCQbN7/" className="text-blue-500 hover:text-white">
               <FaFacebook />
-            </a> */}
+            </a>
             <a href="https://www.instagram.com/thehelpinghumanfoundation?igsh=anFtM2ZkZmtweHk=" className="text-pink-500 hover:text-white">
               <FaInstagram />
             </a>

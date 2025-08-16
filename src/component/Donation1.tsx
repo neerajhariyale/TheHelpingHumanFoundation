@@ -132,7 +132,7 @@ const Donation1 = () => {
     lg:grid-cols-4 
     justify-items-center"
   >
-    {filteredData.map((item, index) => (
+    {filteredData.slice(0,4).map((item, index) => (
       <DonationCard
         key={index}
         leftText={item.leftText}

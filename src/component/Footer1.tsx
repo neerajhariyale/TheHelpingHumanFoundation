@@ -1,8 +1,10 @@
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { MdLocationOn, MdEmail, MdPhone } from "react-icons/md";
 import logo from "@/assets/workPhotos/logo1.png"
+import { useNavigate } from "react-router-dom";
 
 const Footer1 = () => {
+    const navigate = useNavigate();
   return (
     <footer className=" mb-2 text-black mt-4 px-6 py-10 flex-col lg:flex lg:flex-row lg:justify-between lg:gap-24 border rounded-lg shadow-xl ">
       {/* Logo + Intro */}
@@ -67,10 +69,10 @@ const Footer1 = () => {
       <div className="mt-8">
         <h2 className="text-xl font-extrabold mb-4 font-libertinus">QUICK LINKS</h2>
         <ul className="space-y-2 text-pink-500">
-          <li><a href="/" className="hover:text-black font-libertinus">Home</a></li>
-          <li><a href="/about-us" className="hover:text-black font-libertinus">About Us</a></li>
-          <li><a href="/about-us" className="hover:text-black font-libertinus">Our Mission</a></li>
-          <li><a href="/donate" className="hover:text-black font-libertinus">Donate</a></li>
+          <li className="hover:text-black font-libertinus" onClick={ ()=> navigate('/')}>Home</li>
+          <li onClick={() => navigate("/about-us")} className="hover:text-black font-libertinus">About Us</li>
+          <li onClick={() => navigate("/about-us")} className="hover:text-black font-libertinus">Our Mission</li>
+          <li onClick={() => navigate("/donate")} className="hover:text-black font-libertinus" >Donate</li>
         </ul>
       </div>
 

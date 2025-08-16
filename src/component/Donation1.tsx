@@ -9,68 +9,19 @@ import birthdaycake from "@/assets/workPhotos/birthdaycakecutting.jpg";
 import planttree from "@/assets/workPhotos/planttree.jpg";
 import mowlish from "@/assets/workPhotos/education/Mowlish.jpg";
 import tashwin from "@/assets/workPhotos/education/Tashwin.jpg";
-import educationkit from "@/assets/workPhotos/educationkit.jpg"
+import educationkit from "@/assets/workPhotos/educationkit.jpg";
+
 const donationData = [
-  {
-    leftText: "Feed a Home person",
-    rightText: "₹30/per person",
-    image: workimage2,
-    category: "🍛 Food",
-  },
-  {
-    leftText: "Veg Biriyani",
-    rightText: "₹60/per person",
-    image: vegbiryani,
-    category: "🍛 Food",
-  },
-  {
-    leftText: "Thaali Meals",
-    rightText: "₹60/per person",
-    image: thaalimeal,
-    category: "🍛 Food",
-  },
-  {
-    leftText: "Feed a Stray Dog",
-    rightText: "₹35/per stray dog",
-    image: feeddog,
-    category: "🐶 Animal",
-  },
-  {
-    leftText: "Virtual Cake Cutting",
-    rightText: "₹4000/celebration",
-    image: virtualcakecutting,
-    category: "🎂 Birthday Celebration",
-  },
-  {
-    leftText: "Birthday Cake",
-    rightText: "₹1600 - 20 child",
-    image: birthdaycake,
-    category: "🎂 Birthday Celebration",
-  },
-  {
-    leftText: "Plant a tree",
-    rightText: "₹70/per sapling ",
-    image: planttree,
-    category: "🌳 Environment",
-  },
-   {
-    leftText: "Education Kit",
-    rightText: "₹200/per student",
-    image: educationkit,
-    category: "📖 Education",
-  },
-  {
-    leftText: "Mowlish.S",
-    rightText: "Raised: ₹3811 | Goal: ₹51600",
-    image: mowlish,
-    category: "📖 Education",
-  },
-  {
-    leftText: "Tashwin.M",
-    rightText: "Raised: ₹3811 | Goal: ₹51600",
-    image: tashwin,
-    category: "📖 Education",
-  },
+  { leftText: "Feed a Home person", rightText: "₹30/per person", image: workimage2, category: "🍛 Food" },
+  { leftText: "Veg Biriyani", rightText: "₹60/per person", image: vegbiryani, category: "🍛 Food" },
+  { leftText: "Thaali Meals", rightText: "₹60/per person", image: thaalimeal, category: "🍛 Food" },
+  { leftText: "Feed a Stray Dog", rightText: "₹35/per stray dog", image: feeddog, category: "🐶 Animal" },
+  { leftText: "Virtual Cake Cutting", rightText: "₹4000/celebration", image: virtualcakecutting, category: "🎂 Birthday Celebration" },
+  { leftText: "Birthday Cake", rightText: "₹1600 - 20 child", image: birthdaycake, category: "🎂 Birthday Celebration" },
+  { leftText: "Plant a tree", rightText: "₹70/per sapling", image: planttree, category: "🌳 Environment" },
+  { leftText: "Education Kit", rightText: "₹200/per student", image: educationkit, category: "📖 Education" },
+  { leftText: "Mowlish.S", rightText: "Raised: ₹3811 | Goal: ₹51600", image: mowlish, category: "📖 Education" },
+  { leftText: "Tashwin.M", rightText: "Raised: ₹3811 | Goal: ₹51600", image: tashwin, category: "📖 Education" },
 ];
 
 type Props = {
@@ -83,7 +34,7 @@ const DonationCard = ({ leftText, rightText, image }: Props) => {
   const navigate = useNavigate();
 
   return (
-    <div className="max-w-sm bg-white shadow-lg rounded-2xl overflow-hidden border-1  border-pink-500">
+    <div className="min-w-[250px] max-w-sm bg-white shadow-lg rounded-2xl overflow-hidden border-1 border-pink-500 mx-2">
       <img src={image} alt="Donation" className="w-64 h-52 object-cover" />
       <div className="p-4 flex flex-col justify-between items-center">
         <h2 className="text-lg font-semibold text-gray-800 font-libertinus">{leftText}</h2>
@@ -103,12 +54,12 @@ const DonationCard = ({ leftText, rightText, image }: Props) => {
 
 const Donation1 = () => {
   const [filter, setFilter] = useState("All");
-  const [visibleCount, setVisibleCount] = useState(4); // default for larger screens
+  const [isMobile, setIsMobile] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
     const handleResize = () => {
-      setVisibleCount(window.innerWidth < 768 ? 2 : 4); // 2 on mobile, 4 on others
+      setIsMobile(window.innerWidth < 768);
     };
 
     handleResize(); // run initially
@@ -131,51 +82,64 @@ const Donation1 = () => {
     (item) => filter === "All" || item.category === filter
   );
 
-  const displayedCards = filteredData.slice(0, visibleCount);
-
   return (
-    <div className="p-2 w-full mx-auto ">
-
-      
-      {/* Filter Buttons */}
-      <div className="mb-6  scrollbar-track-transparent w-72 mx-auto md:w-96 lg:w-full xl:w-full overflow-x-auto whitespace-nowrap p-2">
-        <div className="inline-flex gap-3 px-2 whitespace-nowrap">
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setFilter(cat)}
-              className={`px-4 py-2 rounded-full border mr-1 ml-1 font-medium font-libertinus transition shrink-0 ${
-                filter === cat
-                  ? "bg-pink-500 text-white border-pink-500"
-                : "bg-white  border-pink=500 hover:bg-pink-500 hover:text-white hover:cursor-pointer"
-              }`}
-            >
-              {cat}
-            </button>
-          ))}
+    <div className="p-2 w-full mx-auto">
+      {/* Show Filters only on Desktop */}
+      {!isMobile && (
+        <div className="mb-6 scrollbar-track-transparent w-72 mx-auto md:w-96 lg:w-full xl:w-full overflow-x-auto whitespace-nowrap p-2">
+          <div className="inline-flex gap-3 px-2 whitespace-nowrap">
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setFilter(cat)}
+                className={`px-4 py-2 rounded-full border mr-1 ml-1 font-medium font-libertinus transition shrink-0 ${
+                  filter === cat
+                    ? "bg-pink-500 text-white border-pink-500"
+                    : "bg-white border-pink=500 hover:bg-pink-500 hover:text-white hover:cursor-pointer"
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
 
-      
-
-      {/* Cards Grid */}
-      <div
-        className="grid gap-6 
-        grid-cols-1 
-        sm:grid-cols-2 
-        md:grid-cols-3 
-        lg:grid-cols-4 
-        justify-items-center"
-      >
-        {displayedCards.map((item, index) => (
-          <DonationCard
-            key={index}
-            leftText={item.leftText}
-            rightText={item.rightText}
-            image={item.image}
-          />
-        ))}
+      {/* Mobile View → Carousel */}
+      {/* Mobile View → Scrollable Carousel */}
+{isMobile ? (
+  <div className="flex overflow-x-auto w-screen scrollbar-hide snap-x snap-mandatory space-x-4 p-2">
+    {donationData.map((item, index) => (
+      <div key={index} className="snap-center flex-shrink-0 w-[260px]">
+        <DonationCard
+          leftText={item.leftText}
+          rightText={item.rightText}
+          image={item.image}
+        />
       </div>
+    ))}
+  </div>
+) : (
+  // Desktop View → Grid
+  <div
+    className="grid gap-6 
+    grid-cols-1 
+    sm:grid-cols-2 
+    md:grid-cols-3 
+    lg:grid-cols-4 
+    justify-items-center"
+  >
+    {filteredData.map((item, index) => (
+      <DonationCard
+        key={index}
+        leftText={item.leftText}
+        rightText={item.rightText}
+        image={item.image}
+      />
+    ))}
+  </div>
+)}
+
 
       {/* View More Button */}
       <div className="flex justify-center mt-6">

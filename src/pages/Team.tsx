@@ -15,9 +15,9 @@ const Team = () => {
         <FontAwesomeIcon icon={faWhatsapp} size="2x" />
       </a>
       <div className="mt-5  text-center">
-        <p className="text-2xl italic font-semibold ">
+        <p className="text-2xl italic font-semibold font-libertinus">
           "We are the hearts and hands powering{" "}
-          <span className="text-pink-500"> The Helping Human Foundation." </span>
+          <span className="text-pink-500 font-libertinus"> The Helping Human Foundation." </span>
         </p>
       </div>
 

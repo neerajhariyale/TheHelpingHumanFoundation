@@ -67,7 +67,7 @@ const Teams = () => {
                 alt=""
                 className="h-24 w-24 object-cover mx-auto rounded-full"
               />
-              <p className="text-center text-xl font-semibold mt-3 text-pink-500">
+              <p className="text-center text-xl font-semibold mt-3 text-pink-500 font-libertinus">
                 {item.name}
               </p>
               <p className="text-center text-md text-gray-800 font-semibold font-libertinus">
@@ -99,7 +99,7 @@ const Teams = () => {
                 alt=""
                 className="h-24 w-24 object-cover mx-auto rounded-full"
               />
-              <p className="text-center text-xl font-semibold mt-3 text-pink-500">
+              <p className="text-center text-xl font-semibold mt-3 text-pink-500 font-libertinus">
                 {item.name}
               </p>
               <p className="text-center text-md text-gray-800 font-semibold font-libertinus">

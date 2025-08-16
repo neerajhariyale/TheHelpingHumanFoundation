@@ -252,11 +252,11 @@ const DonateForm: React.FC<DonateFormProps> = ({
     <div className="w-full min-h-screen mt-5  flex flex-col justify-center items-center ">
       <Toaster />
       {/* Quote Section */}
-      <h1 className="text-2xl sm:text-4xl font-semibold text-center   mb-4">
+      <h1 className="text-2xl sm:text-4xl font-semibold text-center font-libertinus  mb-4">
         "Donate today —{" "}
-        <span className="text-red-500">because change begins with you."</span>
+        <span className="text-pink-500 font-libertinus">because change begins with you."</span>
       </h1>
-      <p className="text-center text-gray-700 max-w-xl mb-8">
+      <p className="text-center text-gray-700 max-w-xl mb-8 font-libertinus">
         Your donation helps us feed the hungry, educate children, and support
         the needy. Join hands with us to create a better, kinder, and hopeful
         world.
@@ -265,7 +265,7 @@ const DonateForm: React.FC<DonateFormProps> = ({
         onSubmit={handleSubmit}
         className="p-4 max-w-md mx-auto bg-white shadow rounded space-y-4 border-2"
       >
-        <h2 className="text-xl font-bold underline text-center ">
+        <h2 className="text-xl font-bold underline text-center font-libertinus ">
           {isEditing ? "Edit Donation" : "Donation Form ❤️‍🩹"}
         </h2>
 
@@ -498,8 +498,8 @@ const DonateForm: React.FC<DonateFormProps> = ({
         />
       </div> */}
 
-        <div className=" shadow-stone-400 shadow-2xl p-6 rounded-xl">
-          <h2 className="text-lg font-semibold mb-2 text-center">
+        <div className=" shadow-stone-400 shadow-2xl p-6 rounded-xl font-libertinus">
+          <h2 className="text-lg font-semibold mb-2 text-center ">
             Scan & Donate via UPI
           </h2>
           <img
@@ -507,35 +507,35 @@ const DonateForm: React.FC<DonateFormProps> = ({
             alt="Donate QR Code"
             className="w-96 mx-auto h-96  object-contain rounded-md "
           />
-          <p className="text-sm text-center mt-1 text-gray-600">
+          <p className="text-sm text-center mt-1 text-gray-600 font-semibold">
             UPI ID: <span className="font-medium">6377119794@ptyes</span>
           </p>
           <p className="text-xs font-semibold text-center mt-4 mb-4">OR</p>
           <div className="p-3 border rounded bg-gray-100 text-sm">
-            <h2 className="text-lg font-semibold mb-2 text-center">
+            <h2 className="text-lg font-bold mb-2 text-center">
               Donate via Bank Account
             </h2>
             <p>
-              <span className="font-medium">Bank Name:</span>{" "}
+              <span className="font-semibold">Bank Name:</span>{" "}
               {accountDetails.bankName}
             </p>
             <p>
-              <span className="font-medium">Account Holder Name:</span>{" "}
+              <span className="font-semibold">Account Holder Name:</span>{" "}
               {accountDetails.accountHolderName}
             </p>
             <p>
-              <span className="font-medium">Account Number:</span>{" "}
+              <span className="font-semibold">Account Number:</span>{" "}
               {accountDetails.accountNumber}
             </p>
             <p>
-              <span className="font-medium">IFSC Code:</span>{" "}
+              <span className="font-semibold">IFSC Code:</span>{" "}
               {accountDetails.ifscCode}
             </p>
             <p>
-              <span className="font-medium">MMID:</span> {accountDetails.mmid}
+              <span className="font-semibold">MMID:</span> {accountDetails.mmid}
             </p>
             <p>
-              <span className="font-medium">Branch Address:</span>{" "}
+              <span className="font-semibold">Branch Address:</span>{" "}
               {accountDetails.branchAddress}
             </p>
           </div>

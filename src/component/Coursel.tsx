@@ -47,24 +47,24 @@ const Coursel = () => {
   }, [currentIndex]);
 
   return (
-    <div className="relative w-full  mx-auto overflow-hidden bg-black">
+    <div className="relative w-full  rounded-xl  mx-auto overflow-hidden bg-black">
       {/* Image */}
       <img
         src={images[currentIndex].src}
         alt={`workimage-${currentIndex}`}
-        className="w-full h-full lg:h-[600px]  object-contain   transition-all duration-500"
+        className="w-full h-full lg:h-[600px]   object-contain   transition-all duration-500"
       />
 
       {/* Left Arrow */}
       <BsArrowLeftCircleFill
         onClick={prevSlide}
-        className="absolute top-1/2 left-5 text-gray-100 text-3xl cursor-pointer z-10 transform -translate-y-1/2 hover:scale-110 transition"
+        className="absolute top-1/2 left-5 text-pink-500 bg-white rounded-full  text-xl cursor-pointer z-10 transform -translate-y-1/2 hover:scale-110 transition"
       />
 
       {/* Right Arrow */}
       <BsArrowRightCircleFill
         onClick={nextSlide}
-        className="absolute top-1/2 right-5 text-gray-100 text-3xl cursor-pointer z-10 transform -translate-y-1/2 hover:scale-110 transition"
+        className="absolute top-1/2 right-5 text-pink-500 bg-white rounded-full text-xl cursor-pointer z-10 transform -translate-y-1/2 hover:scale-110 transition"
       />
 
       {/* Indicators */}
@@ -74,7 +74,7 @@ const Coursel = () => {
             key={index}
             onClick={() => setCurrentIndex(index)}
             className={`w-3 h-3 rounded-full ${
-              currentIndex === index ? "bg-white" : "bg-gray-400"
+              currentIndex === index ? "bg-pink-500" : "bg-gray-300"
             }`}
           ></button>
         ))}

@@ -86,8 +86,8 @@ const DonationCard = ({ leftText, rightText, image }: Props) => {
     <div className="max-w-sm bg-white shadow-lg rounded-2xl overflow-hidden border-1  border-pink-500">
       <img src={image} alt="Donation" className="w-64 h-52 object-cover" />
       <div className="p-4 flex flex-col justify-between items-center">
-        <h2 className="text-lg font-semibold text-gray-800">{leftText}</h2>
-        <p className="text-sm font-medium text-gray-600">{rightText}</p>
+        <h2 className="text-lg font-semibold text-gray-800 font-libertinus">{leftText}</h2>
+        <p className="text-md font-medium text-gray-600 font-libertinus">{rightText}</p>
       </div>
       <div className="px-4 pb-4">
         <button
@@ -144,7 +144,7 @@ const Donation1 = () => {
             <button
               key={cat}
               onClick={() => setFilter(cat)}
-              className={`px-4 py-2 rounded-full border mr-1 ml-1 font-medium transition shrink-0 ${
+              className={`px-4 py-2 rounded-full border mr-1 ml-1 font-medium font-libertinus transition shrink-0 ${
                 filter === cat
                   ? "bg-pink-500 text-white border-pink-500"
                 : "bg-white  border-pink=500 hover:bg-pink-500 hover:text-white hover:cursor-pointer"

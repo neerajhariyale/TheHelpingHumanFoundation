@@ -35,10 +35,10 @@ const Hero = () => {
           animateBy="words"
           direction="top"
           onAnimationComplete={handleAnimationComplete}
-          className="text-xl sm:text-3xl md:text-4xl font-nautigal font-semibold text-pink-600 "
+          className="text-xl sm:text-3xl md:text-4xl font-nautigal font-bold text-pink-600 "
         />
 
-        <p className="text-sm sm:text-base md:text-lg px-2 md:px-6 mt-4 text-gray-500">
+        <p className="text-sm sm:text-base font-libertinus md:text-lg px-2 md:px-6 mt-4 text-gray-500">
           The Helping Human Foundation is a non-profit NGO dedicated to serving
           underprivileged communities through initiatives in education,
           healthcare, women empowerment, and social welfare, aiming to create
@@ -47,7 +47,7 @@ const Hero = () => {
         {/* <TextAnimateDemo/> */}
 
         <div className="w-32  mt-4 hover:cursor-pointer  bg-pink-500 rounded-lg p-2 text-white hover:bg-pink-700 text-center mx-auto" onClick={() => navigate('/donate')}>
-          <button className="hover:cursor-pointer">DONATE</button>
+          <button className="hover:cursor-pointer font-nautigal">DONATE</button>
         </div>
 
         {/* Number Stats */}
@@ -60,7 +60,7 @@ const Hero = () => {
               animateBy="words"
               direction="top"
               onAnimationComplete={handleAnimationComplete}
-              className="text-sm  md:text-lg lg:text-lg xl:text-lg  font-semibold text-pink-600"
+              className="text-sm  md:text-lg lg:text-lg xl:text-lg font-libertinus font-semibold text-pink-600"
             />
             <NumberTickerDemo number={9} suffix="Lakh+" />
           </div> 
@@ -74,7 +74,7 @@ const Hero = () => {
               animateBy="words"
               direction="top"
               onAnimationComplete={handleAnimationComplete}
-               className="text-sm  md:text-lg lg:text-lg xl:text-lg  font-semibold text-pink-600"
+               className="text-sm  md:text-lg lg:text-lg xl:text-lg font-libertinus font-semibold text-pink-600"
             />
             <NumberTickerDemo number={8.45} suffix="Lakh+" />
           </div> 
@@ -87,7 +87,7 @@ const Hero = () => {
               animateBy="words"
               direction="top"
               onAnimationComplete={handleAnimationComplete}
-              className="text-sm  md:text-lg lg:text-lg xl:text-lg  font-semibold text-pink-600"
+              className="text-sm  md:text-lg lg:text-lg xl:text-lg font-libertinus font-semibold text-pink-600"
             />
             <NumberTickerDemo number={28} suffix="K+" />
           </div>
@@ -100,7 +100,7 @@ const Hero = () => {
               animateBy="words"
               direction="top"
               onAnimationComplete={handleAnimationComplete}
-               className="text-sm  md:text-lg lg:text-lg xl:text-lg  font-semibold text-pink-600"
+               className="text-sm  md:text-lg lg:text-lg xl:text-lg font-libertinus font-semibold text-pink-600"
             />
             <NumberTickerDemo number={4} suffix="K+" />
           </div> 

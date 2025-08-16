@@ -43,6 +43,9 @@
   font-style: italic;
 }
 
+@theme {
+  --font-libertinus: "Libertinus Serif", normal;
+}
 
 @theme {
   --font-nautigal: "The Nautigal", cursive;

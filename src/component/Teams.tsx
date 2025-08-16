@@ -70,10 +70,10 @@ const Teams = () => {
               <p className="text-center text-xl font-semibold mt-3 text-pink-500">
                 {item.name}
               </p>
-              <p className="text-center text-md text-gray-800 font-semibold">
+              <p className="text-center text-md text-gray-800 font-semibold font-libertinus">
                 {item.position}
               </p>
-              <p className="text-center text-gray-500  text-sm mt-2">
+              <p className="text-center text-gray-500  text-sm mt-2 font-libertinus">
                 {item.desc}
               </p>
               <div className="flex justify-center mt-3">
@@ -102,10 +102,10 @@ const Teams = () => {
               <p className="text-center text-xl font-semibold mt-3 text-pink-500">
                 {item.name}
               </p>
-              <p className="text-center text-md text-gray-800 font-semibold">
+              <p className="text-center text-md text-gray-800 font-semibold font-libertinus">
                 {item.position}
               </p>
-              <p className="text-center text-gray-500 text-sm mt-2">
+              <p className="text-center text-gray-500 text-sm mt-2 font-libertinus">
                 {item.desc}
               </p>
               <div className="flex justify-center mt-3">

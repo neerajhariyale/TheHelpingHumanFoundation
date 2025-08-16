@@ -58,13 +58,13 @@ const Coursel = () => {
       {/* Left Arrow */}
       <BsArrowLeftCircleFill
         onClick={prevSlide}
-        className="absolute top-1/2 left-5 text-pink-500 bg-white rounded-full  text-xl cursor-pointer z-10 transform -translate-y-1/2 hover:scale-110 transition"
+        className="absolute top-1/2 left-5 text-pink-500 bg-white rounded-full  text-2xl cursor-pointer z-10 transform -translate-y-1/2 hover:scale-110 transition"
       />
 
       {/* Right Arrow */}
       <BsArrowRightCircleFill
         onClick={nextSlide}
-        className="absolute top-1/2 right-5 text-pink-500 bg-white rounded-full text-xl cursor-pointer z-10 transform -translate-y-1/2 hover:scale-110 transition"
+        className="absolute top-1/2 right-5 text-pink-500 bg-white rounded-full text-2xl cursor-pointer z-10 transform -translate-y-1/2 hover:scale-110 transition"
       />
 
       {/* Indicators */}

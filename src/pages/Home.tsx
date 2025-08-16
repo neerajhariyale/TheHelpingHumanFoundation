@@ -3,13 +3,14 @@ import Hero from "@/component/Hero";
 import Teams from "@/component/Teams";
 import Donation1 from "@/component/Donation1";
 import WelfareServices from "@/component/WelfareServices";
-import Footer from "@/component/Footer";
+// import Footer from "@/component/Footer";
 import { BlurFade } from "@/components/magicui/blur-fade";
 import Copyright from "@/component/Copyright";
 import CarouselPlugin from "@/component/Coursel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import Aboutus from "@/component/Aboutus";
+import Footer1 from "@/component/Footer1";
 
 const Home = () => {
   return (
@@ -82,7 +83,7 @@ const Home = () => {
       </BlurFade>
 
       <BlurFade delay={0.25 * 2} inView>
-        <Footer />
+        <Footer1 />
       </BlurFade>
 
       <BlurFade delay={0.25 * 2} inView>

@@ -21,14 +21,14 @@ const Chairman = () => {
       </div>
 
       <div className="flex flex-col">
-        <h1 className="text-3xl text-center mt-3 font-semibold text-pink-500 tracking-wide">
+        <h1 className="text-3xl font-libertinus text-center mt-3 font-semibold text-pink-500 tracking-wide">
           Ravi Prakash Dahiya
         </h1>
-        <p className="text-md text-center   text-gray-800 ">
+        <p className="text-lg text-center font-libertinus  text-gray-900 ">
           Founder & Chairman
         </p>
         <p className="mt-3 p-4 ">
-          <span className="font-semibold"> The Helping Human Foundation </span>
+          <span className="font-semibold font-libertinus"> The Helping Human Foundation </span>
           is an NGO dedicated to serving underprivileged communities. Its core
           mission is to provide food, education, healthcare, and emergency
           support, aiming to create a more compassionate, inclusive, and
@@ -50,7 +50,7 @@ const Chairman = () => {
             </span>{" "}
             for all.<span className="font-semibold text-pink-600 ">”</span>
           </p>
-          <p className="text-right mr-3 text-gray-600">Founder & Chairman</p>
+          <p className="text-right mr-3 font-libertinus text-gray-600">Founder & Chairman</p>
         </div>
 
         <div className="mt-4 p-2 ml-4">
@@ -129,7 +129,7 @@ const Chairman = () => {
 
          <div className="flex items-center mt-2 gap-3">
   <img src={gmail} alt="Gmail" height={24} width={24} />
-  <a href="mailto:rjdahiya009@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500">
+  <a href="mailto:rjdahiya009@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 underline">
     rjdahiya009@gmail.com
   </a>
 </div>

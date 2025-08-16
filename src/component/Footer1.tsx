@@ -4,7 +4,7 @@ import logo from "@/assets/workPhotos/logo1.png"
 
 const Footer1 = () => {
   return (
-    <footer className="p-1 mb-2 text-black mt-4 px-6 py-10 flex-col lg:flex lg:flex-row lg:justify-between lg:gap-24 border rounded-lg shadow-xl ">
+    <footer className=" mb-2 text-black mt-4 px-6 py-10 flex-col lg:flex lg:flex-row lg:justify-between lg:gap-24 border rounded-lg shadow-xl ">
       {/* Logo + Intro */}
       <div className="text-center mb-6">
         <div >
@@ -81,6 +81,7 @@ const Footer1 = () => {
       >
         Donate
       </a> */}
+      
     </footer>
   );
 };

@@ -17,7 +17,7 @@ const Hero = () => {
   return (
 
    
-    <div className="w-full p-2 flex mx-auto  lg:flex-row ">
+    <div className="w-full p-2 flex mx-auto  lg:flex-row  ">
       {/* Left Image */}
       {/* <div className="w-full lg:w-1/2  flex justify-center items-center">
         <img

@@ -53,7 +53,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="w-full  ">
+    <div className="w-full ">
       <div className="flex justify-between border-none items-center px-4 py-3 md:px-10 max-w-screen-xl mx-auto">
         {/* Logo */}
         <div>

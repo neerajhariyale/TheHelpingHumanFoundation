@@ -34,7 +34,7 @@ const DonationCard = ({ leftText, rightText, image }: Props) => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-w-[250px] max-w-sm bg-white shadow-lg rounded-2xl overflow-hidden border-1 border-pink-500 mx-2">
+    <div className="min-w-[250px] max-w-sm bg-white shadow-lg rounded-2xl overflow-hidden border-1 border-pink-500 mx-2 ">
       <img src={image} alt="Donation" className="w-64 h-52 object-cover" />
       <div className="p-4 flex flex-col justify-between items-center">
         <h2 className="text-lg font-semibold text-gray-800 font-libertinus">{leftText}</h2>
@@ -108,7 +108,9 @@ const Donation1 = () => {
       {/* Mobile View → Carousel */}
       {/* Mobile View → Scrollable Carousel */}
 {isMobile ? (
-  <div className="flex overflow-x-auto w-screen scrollbar-hide snap-x snap-mandatory space-x-4 p-2">
+  
+    
+      <div className="flex  overflow-x-auto w-screen  scrollbar-hide snap-x snap-mandatory ">
     {donationData.map((item, index) => (
       <div key={index} className="snap-center flex-shrink-0 w-[260px]">
         <DonationCard
@@ -119,6 +121,7 @@ const Donation1 = () => {
       </div>
     ))}
   </div>
+    
 ) : (
   // Desktop View → Grid
   <div
